@@ -19,9 +19,9 @@ Content {
                 Markdown {
                     text: "# Privacy Policy:
 
-Effective Date: 29.06.2023
+Effective Date: 05.10.2024
 
-This Privacy Policy describes how your personal information is collected, used, and shared when you use [Shift] (referred to as &quot;the App&quot;).
+This Privacy Policy describes how your personal information is collected, used, and shared when you use [NoCode] (referred to as &quot;the App&quot;).
 
 ## Information We Collect
 
