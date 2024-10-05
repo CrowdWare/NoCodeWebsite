@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app name="DemoApp" id="at.crowdware.demoApp" icon="icon.png">
+	<navigation type="HorizontalPager">
+		<item page="home"/>
+		<item page="page2"/>
+		<item page="page3"/>
+	</navigation>
+</app>

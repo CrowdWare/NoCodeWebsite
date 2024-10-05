@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page backgroundColor="#0000ßß" color="#ffffFF" padding="8">
+<column padding="8">
+<markdown color="#FF888888">
+# About the author
+</markdown>
+<spacer height="8"/>
+<image src="olaf.jpg"/>
+<spacer height="8"/>
+<markdown>
+Olaf was born 1963 in Hamburg. He studied graphics design and human computer interaction design.
+</markdown>
+<spacer height="8"/>
+<button label="Home" link="page:home"/>
+</column>
+</page>

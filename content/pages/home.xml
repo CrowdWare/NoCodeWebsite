@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page backgroundColor="#0000ßß" color="#ffffFF" padding="8">
+<column padding="8">
+<markdown color="#888888">
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+*Line 2*
+**Line 3**
+***Line 4***
+(c) (tm) (r) &gt; &amp; &lt;
+(C) (TM) (R)
+~~this is strikethrough~~
+</markdown>
+<spacer height="8"/>
+<image src="ship.png"/>
+<spacer height="8"/>
+<button label="Video" link="page:video"/>
+<spacer height="8"/>
+<button label="About" link="page:about"/>
+</column>
+</page>
