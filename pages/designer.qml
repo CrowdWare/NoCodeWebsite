@@ -37,7 +37,7 @@ Content {
                 Markdown {
                     text: "# Designer
 The designer is currently still a prototype, but it already has quite a bit to offer.  
-For example, you can see any changes you make in the XML immediately in the preview.  
+For example, you can see any changes you make in the SML (**S**imple **M**arkup **L**anguage) immediately in the preview.  
 
 If you use buttons to navigate to other pages, this navigation already works in the preview as well.  
 

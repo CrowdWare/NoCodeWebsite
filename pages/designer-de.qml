@@ -37,7 +37,7 @@ Content {
                 Markdown {
                     text: "# Designer
 Der Designer ist derzeit noch ein Prototyp, der aber schon so einiges auf dem Kasten hat.  
-Du kannst zum Beispiel jede Änderung, die Du im **SML** (Simple Markup Language) vornimmst, sofort in der Vorschau sehen.  
+Du kannst zum Beispiel jede Änderung, die Du im **SML** (**S**imple **M**arkup **L**anguage) vornimmst, sofort in der Vorschau sehen.  
 
 Wenn Du Buttons verwendest, um zu anderen Seiten zu navigieren, dann funktioniert diese Navigation bereits auch in der Vorschau.  
 
