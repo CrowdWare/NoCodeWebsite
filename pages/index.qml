@@ -186,7 +186,8 @@ So far, none have prevailed, and as a programmer, you feel it, as you had to sup
 Currently, the full range of features is not yet available, but you can already create an app for Android in a simple way,
 without any programming knowledge, without having to compile the app, and without the hassle of publishing the app in the Play Store.
 
-Just write a bit of XML (later there will also be a drag-and-drop designer), preview the app, try it out interactively, and publish it.
+Just write a bit of SML (**S**imple **M**arkup **L**anguage), preview the app, try it out interactively, and publish it.  
+Later there will also be a drag-and-drop designer, if you are bored to hack in text.
 
 The app is instantly available online, and you and anyone else to whom you send the corresponding link can admire and work with this app using NoCodeBrowser."
                 }
@@ -285,7 +286,7 @@ Features that are most requested by customers will be prioritized for developmen
                 span: 12
 
                 Markdown {
-                    text: "
+                    text: "&lt;p class=&quot;p-3&quot;&gt;&lt;/p&gt;
 # Funding
 When we founded CrowdWare, we set ourselves the goal of providing custom software at very affordable prices and as open source.  
 The idea for this project is also to first design a prototype, then raise development costs through crowdfunding, and finally complete the product.  

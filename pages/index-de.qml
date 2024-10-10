@@ -74,7 +74,7 @@ Content {
 	&lt;div class=&quot;box-content&quot;&gt;
 		&lt;i class=&quot;fa fa-lightbulb-o&quot;&gt;&lt;/i&gt;
 		&lt;h4&gt;&lt;strong&gt;Zero deployment&lt;/strong&gt;&lt;/h4&gt;
-		&lt;p&gt;Keine Notwendigkeit, jeder Mal eine neue App runterzuladen, wenns ein Update gibt.&lt;/p&gt;
+		&lt;p&gt;Keine Notwendigkeit, jedes Mal eine neue App runterzuladen, wenns ein Update gibt.&lt;/p&gt;
 	&lt;/div&gt;
 &lt;/div&gt;"
                 }
@@ -186,7 +186,8 @@ Durchgesetzt hat sich bis dato keiner und das merkt man als Programmierer, da ma
 Derzeit ist natürlich noch nicht der volle Funktionsumfang enthalten, aber du kannst schon heute auf einfache Weise eine App für Android erstellen, 
 ohne Programmierkenntnisse, ohne die App kompilieren zu müssen und ohne die App umständlich im Playstore veröffentlichen zu müssen.  
 
-Einfach ein bisschen XML schreiben (später gibt es dann auch ein Drag and Drop Designer), die App in der Vorschau begutachten, interaktiv ausprobieren und veröffentlichen.  
+Einfach ein bisschen SML (**S**imple **M**arkup **L**anguage) schreiben, die App in der Vorschau begutachten, interaktiv ausprobieren und veröffentlichen.  
+Später gibt es dann auch einen Drag and Drop Designer, wenn Du keine Lust haben solltest, Text einzugeben.
 
 Die App ist sofort online verfügbar und Du und jeder andere, den du einen entsprechenden Link sendest, kann diese App mit NoCodeBrowser bewundern und damit arbeiten. "
                 }
@@ -284,7 +285,8 @@ Features, die vo den meisten Kunden gewünscht werden, werden wir prioritär beh
                 span: 12
 
                 Markdown {
-                    text: "# Finanzierung
+                    text: "&lt;p class=&quot;p-3&quot;&gt;&lt;/p&gt;
+# Finanzierung
 Wir haben es uns damals zur Gründung von CrowdWare zur Aufgabe gemacht, individuelle Software zu sehr günstigen Preise und Open Source zur Verfügung zu stellen.  
 Auch bei diesem Projekt ist die Idee, erst einmal einen Prototypen zu designen, dann die Entwicklungskosten via CrowdFunding einzusammeln und dann das Produkt fertig zu stellen.  
 Manchmal, wie auch hier, überspringen wir auch mal einen Punkt.  

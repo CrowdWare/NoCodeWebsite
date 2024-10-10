@@ -99,9 +99,281 @@ However, videos are only displayed as thumbnails here."
                 span: 12
 
                 Markdown {
+                    text: "&lt;p class=&quot;p-3&quot;&gt;&lt;/p&gt;
+# SML"
+                    adminlabel: "SML"
+                }
+            }
+        }
+
+        Row {
+
+            Column {
+                span: 6
+
+                Markdown {
+                    text: "```qml
+Page {
+	backgroundColor: &quot;#0000ßß&quot; 
+	color: &quot;#ffffFF&quot; 
+	padding: &quot;8&quot;
+
+	Column {
+		padding: &quot;8&quot;
+
+		Markdown {
+			color: &quot;#888888&quot;
+			text: &quot;Lorem ipsum dolor&quot;
+		}
+	}
+}
+```"
+                }
+            }
+
+            Column {
+                span: 6
+
+                Markdown {
+                    text: "SML stands for **S**imple **M**arkup **L**anguage and its similar to QML (Qt Markup Language). 
+
+An app is divided into pages. The user can later navigate from page to page,  
+either by tapping a button or tapping a link.  
+Or with a so-called pager, which allows you to swipe the pages left or right.  
+
+Each page then gets a so-called element to identify what type of file it is.
+In the case of the page, this is **Page**. The content of the element is surrounded by the characters **{** and **}**.
+"
+                }
+            }
+        }
+
+        Row {
+
+            Column {
+                span: 12
+
+                Markdown {
                     text: "
-# Syntax"
-                    adminlabel: "Syntax"
+An attribute like the one above, backgroundColor (background color), is assigned a value in quotes with the “=” sign.
+In this case, the string “#0000FF” represents the hexadecimal value for a color.
+Such a color value consists of the character “#” followed by three hexadecimal values for the color components R (red), G (green), and B (blue).
+The values range from “00” (0) to “FF” (255).
+If a hexadecimal value is prefixed to the three color values, it denotes the transparency, with “00” being fully transparent and “FF” being fully opaque. 
+
+The value “color” here represents the text color, and “padding” refers to the inner spacing. The value padding=&quot;8&quot; means that all spacings (top, bottom, left, and right) are set to 8 dp (density-independent pixels). For padding=&quot;8 16 20 4&quot;, each value corresponds to top, right, bottom, and left, respectively.
+So, top is 8, right is 16, bottom is 20, and left is 4.
+"
+                }
+            }
+        }
+
+        Row {
+
+            Column {
+                span: 12
+
+                Markdown {
+                    text: "&lt;p class=&quot;p-3&quot;&gt;&lt;/p&gt;
+# Layouts
+To arrange elements within the page, layouts such as **Row** and **Column** are used.
+"
+                    adminlabel: "Layouts"
+                }
+            }
+        }
+
+        Row {
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "With the **Row**, the elements are arranged in columns from left to right."
+                }
+            }
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "```qml
+Row {
+    Text { 
+		text: &quot;left column&quot; 
+	}
+	Text { 
+		text: &quot;right column&quot; 
+	}
+}
+```"
+                    adminlabel: "Row"
+                }
+            }
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "With **Column**, the elements are arranged in rows from top to bottom."
+                }
+            }
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "```qml
+Column {
+    Text { text: &quot;upper row&quot; }
+	Text { text: &quot;lower row&quot; }
+}
+```"
+                    adminlabel: "Column"
+                }
+            }
+        }
+
+        Row {
+
+            Column {
+                span: 12
+
+                Markdown {
+                    text: "&lt;p class=&quot;p-3&quot;&gt;&lt;/p&gt;
+# Elements
+"
+                    adminlabel: "Elements"
+                }
+            }
+        }
+
+        Row {
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "```qml
+Text {
+	text: &quot;Lorem ipsum dolor&quot;
+}
+```"
+                    adminlabel: "Text"
+                }
+            }
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "Normal text can be represented using the **Text** element."
+                }
+            }
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "```qml
+Markdown {
+	text: &quot;
+		# Header
+		Lorem ipsum
+		- List item
+		- List item
+		&quot;
+}
+```"
+                    adminlabel: "Markdown Element"
+                }
+            }
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "With **Markdown**, formatted text can be represented."
+                }
+            }
+        }
+
+        Row {
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "Buttons are defined using the **Button** element.  
+The **label** attribute specifies what text should be displayed on the button, and **link** defines what happens when the user clicks the button.  
+In this case, the **about** page will be opened."
+                }
+            }
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "```qml
+Button {
+	label: &quot;About&quot;
+	link: &quot;page:about&quot;
+}
+```"
+                    adminlabel: "Button"
+                }
+            }
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "The **Video** element can be used to display a video that is part of the project and has been stored in the assets directory.  
+The **src** attribute specifies the video file, in this case, &quot;beach.mp4,&quot; and the **height** attribute defines the height of the video in dp (device pixels)."
+                }
+            }
+
+            Column {
+                span: 3
+
+                Markdown {
+                    text: "```qml
+Video { 
+	src: &quot;beach.mp4&quot; 
+	height: &quot;120&quot;
+}
+```"
+                    adminlabel: "Video"
+                }
+            }
+        }
+
+        Row {
+
+            Column {
+                span: 12
+
+                Markdown {
+                    text: "These are just a few of the available elements and attributes. A documentation for this will be provided later.  
+For now, we will focus on implementing the most important features first.
+
+And since this is an open-source project, I hope that a few more developers will join in to complete the rest. ;-)"
+                }
+            }
+        }
+    }
+
+    Section {
+
+        Row {
+
+            Column {
+                span: 12
+
+                Markdown {
+                    text: "&lt;p class=&quot;p-3&quot;&gt;&lt;/p&gt;
+# Markdown"
+                    adminlabel: "Mardown Syntax"
                 }
             }
         }
@@ -112,19 +384,23 @@ However, videos are only displayed as thumbnails here."
                 span: 4
 
                 Markdown {
-                    text: "```xml
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
-*Line 2*
-**Line 3**
-***Line 4***
-(c) (tm) (r) &amp;gt; &amp;amp; &amp;lt;
-(C) (TM) (R)
-~~this is strikethrough~~
+                    text: "```qml
+Markdown { 
+	text: &quot;
+		# Heading 1
+		## Heading 2
+		### Heading 3
+		#### Heading 4
+		##### Heading 5
+		###### Heading 6
+		*Line 2*
+		**Line 3**
+		***Line 4***
+		(c) (tm) (r) &amp;gt; &amp;amp; &amp;lt;
+		(C) (TM) (R)
+		~~this is strikethrough~~
+		&quot;
+}
 ```"
                 }
             }
@@ -179,255 +455,32 @@ Wenn Du den Text &lt;del&gt;durchgestrichen&lt;/del&gt; darstellen möchtest, be
             Column {
                 span: 12
 
-                Markdown {
-                    text: "# XML"
-                }
-            }
-        }
+                Text {
+                    text: "&lt;style&gt;
+.nx {
+    color: #61BEA6;
+}
 
-        Row {
+.s2 {
+    color: #BE896F;
+}
 
-            Column {
-                span: 6
+.k {
+    color: #A0D4FC;
+}
 
-                Markdown {
-                    text: "```xml
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;page backgroundColor=&quot;#0000ßß&quot; color=&quot;#ffffFF&quot; padding=&quot;8&quot;&gt;
-	&lt;column padding=&quot;8&quot;&gt;
-		&lt;markdown color=&quot;#888888&quot;&gt;
-		Lorem ipsum dolor
-		&lt;/markdown&gt;
-	&lt;/column&gt;
-&lt;/page&gt;
-```"
-                }
-            }
+/* Hintergrundfarbe für den &lt;pre&gt;-Tag */
+pre {
+    background-image: none;
+   
+}
 
-            Column {
-                span: 6
+pre .p {
+    color: #f2c307;; 
+}
 
-                Markdown {
-                    text: "Otherwise, the rest is simple XML (Extended Markup Language).
-
-An app is divided into pages. The user can later navigate from page to page,  
-either by tapping a button or tapping a link.  
-Or with a so-called pager, which allows you to swipe the pages left or right.
-"
-                }
-            }
-        }
-
-        Row {
-
-            Column {
-                span: 12
-
-                Markdown {
-                    text: "
-At the beginning of each file, there is an identifier that indicates the version and encoding.  
-```xml 
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-```
-
-Each page then gets a so-called tag to identify what type of file it is.
-In the case of the page, this is Page. A tag always starts with the character “&lt;” and ends with “/&gt;”.
-```xml
-&lt;page backgroundColor=&quot;#0000ßß&quot; color=&quot;#ffffFF&quot; padding=&quot;8&quot;/&gt;
-```
-An attribute like the one above, backgroundColor (background color), is assigned a value in quotes with the “=” sign.
-In this case, the string “#0000FF” represents the hexadecimal value for a color.
-Such a color value consists of the character “#” followed by three hexadecimal values for the color components R (red), G (green), and B (blue).
-The values range from “00” (0) to “FF” (255).
-If a hexadecimal value is prefixed to the three color values, it denotes the transparency, with “00” being fully transparent and “FF” being fully opaque. 
-
-The value “color” here represents the text color, and “padding” refers to the inner spacing. The value padding=&quot;8&quot; means that all spacings (top, bottom, left, and right) are set to 8 dp (density-independent pixels). For padding=&quot;8 16 20 4&quot;, each value corresponds to top, right, bottom, and left, respectively.
-So, top is 8, right is 16, bottom is 20, and left is 4.
-"
-                }
-            }
-        }
-
-        Row {
-
-            Column {
-                span: 12
-
-                Markdown {
-                    text: "# Layouts
-To arrange elements within the page, layouts such as **Row** and **Column** are used.
-"
-                }
-            }
-        }
-
-        Row {
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "With the **Row**, the elements are arranged in columns from left to right."
-                }
-            }
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "```xml
-&lt;row&gt;
-    &lt;text&gt;
-        left column
-    &lt;/text&gt;
-	&lt;text&gt;
-        rechte column
-    &lt;/text&gt;
-&lt;/row&gt;
-```"
-                }
-            }
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "With **Column**, the elements are arranged in rows from top to bottom."
-                }
-            }
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "```xml
-&lt;column&gt;
-    &lt;text&gt;
-        upper row
-    &lt;/text&gt;
-	&lt;text&gt;
-        lower row
-    &lt;/text&gt;
-&lt;/column&gt;
-```"
-                }
-            }
-        }
-
-        Row {
-
-            Column {
-                span: 12
-
-                Markdown {
-                    text: "# Elements
-"
-                }
-            }
-        }
-
-        Row {
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "```xml
-&lt;text&gt;
-	Lorem ipsum dolor
-&lt;/text&gt;
-```"
-                }
-            }
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "Normal text can be represented using the **Text** element."
-                }
-            }
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "```xml
-&lt;markdown&gt;
-# Header
-Lorem ipsum
-- List item
-- List item
-&lt;/makdown&gt;
-```"
-                }
-            }
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "With **Markdown**, formatted text can be represented."
-                }
-            }
-        }
-
-        Row {
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "Buttons are defined using the **Button** element.  
-The **label** attribute specifies what text should be displayed on the button, and **link** defines what happens when the user clicks the button.  
-In this case, the **about** page will be opened."
-                }
-            }
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "```xml
-&lt;button
-	label=&quot;About&quot;
-	link=&quot;page:about&quot;/&gt;
-```"
-                }
-            }
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "The **Video** element can be used to display a video that is part of the project and has been stored in the assets directory.  
-The **src** attribute specifies the video file, in this case, &quot;beach.mp4,&quot; and the **height** attribute defines the height of the video in dp (device pixels)."
-                }
-            }
-
-            Column {
-                span: 3
-
-                Markdown {
-                    text: "```xml
-&lt;video 
-	src=&quot;beach.mp4&quot; 
-	height=&quot;120&quot;/&gt;
-```"
-                }
-            }
-        }
-
-        Row {
-
-            Column {
-                span: 12
-
-                Markdown {
-                    text: "These are just a few of the available elements and attributes. A documentation for this will be provided later.  
-For now, we will focus on implementing the most important features first.
-
-And since this is an open-source project, I hope that a few more developers will join in to complete the rest. ;-)"
+&lt;/style&gt;"
+                    adminlabel: "Style"
                 }
             }
         }
