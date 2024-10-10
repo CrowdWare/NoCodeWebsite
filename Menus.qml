@@ -14,8 +14,8 @@ Menus {
             icon: ''
         }
         Menuitem {
-            title: 'Blog'
-            url: 'blog.html'
+            title: 'Documentation'
+            url: 'docu.html'
             icon: ''
         }
         Menuitem
@@ -53,8 +53,8 @@ Menus {
             icon: ''
         }
         Menuitem {
-            title: 'Blog'
-            url: 'blog.html'
+            title: 'Dokumentation'
+            url: 'docu-de.html'
             icon: ''
         }
         Menuitem

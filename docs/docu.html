@@ -4,8 +4,8 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-<title>Privacy</title>
-<meta name="keywords" content="No code, app, android" />
+<title>docu</title>
+<meta name="keywords" content="android,app,no code" />
 <meta name="description" content="NoCode Designer" />
 <meta name="Author" content="Olaf" />
 
@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://www.shifting.site/assets/images/happypeople.png" />
 <meta property="og:type" content="image/png" />
 <meta property="og:url" content="https://www.shifting.site/" /> 
-<meta property="og:title" content="Privacy" />
+<meta property="og:title" content="docu" />
 <meta property="og:description" content="Die Idee hinter Shift ist die Möglichkeit, mit einer neuen virtuellen Flüssigkeit, die von Menschen hergestellt wird, ein universelles Grundeinkommen zu schaffen." />
 
 <!-- WEB FONTS -->
@@ -86,7 +86,7 @@
 			
 			
 			
-			<li>
+			<li class="active">
 				<a  href="docu.html">Documentation</a>
 			</li>
 			
@@ -127,85 +127,102 @@
 		<!-- WRAPPER -->
 <div id="wrapper">
 		
+<header id="page-title">
+	<div class="container">
+		<h1>Documentation</h1>
+		<ul class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li class="active">Documentation</li>
+		</ul>
+	</div>
+</header>
 <section class="container">
 <div class="row">
-<div class="col-md-12">
-<h1 id="privacy-policy">Privacy Policy:</h1>
+<div class="col-md-4">
+<h4 id="documents">Documents</h4>
 
-<p>Effective Date: 05.10.2024</p>
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link" href="#">App</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="page.html">Page</a>
+  </li>
+</ul>
 
-<p>This Privacy Policy describes how your personal information is collected, used, and shared when you use [NoCode] (referred to as "the App").</p>
+<h4 id="elements">Elements</h4>
 
-<h2 id="information-we-collect">Information We Collect</h2>
+<ul class="nav flex-column">  
+    <li class="nav-item">
+        <a class="nav-link" href="#">Text</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Markdown</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Spacer</a>
+    </li>   
+</ul>
 
-<h3 id="11-personal-information">1.1 Personal Information:</h3>
+<h4 id="layout">Layout</h4>
 
-<p>When you register on the App, we collect the following personal information:</p>
+<ul class="nav flex-column">  
+    <li class="nav-item">
+        <a class="nav-link" href="#">Row</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Column</a>
+    </li>   
+</ul>
 
-<pre><code>Name or nickname
-Invitation code
-Country
-</code></pre>
+<h4 id="build">Build</h4>
 
-<h3 id="12-usage-data">1.2 Usage Data:</h3>
+<ul class="nav flex-column">  
+    <li class="nav-item">
+        <a class="nav-link" href="#">Browsable App (.SML)</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Android App (.APK)</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Source Code (.KT)</a>
+    </li>   
+</ul>
 
-<p>When you use the App, we may collect certain usage data automatically, including your interactions with the App's features and the timestamp when you press the "start scooping" button. This timestamp is saved on our server.</p>
+</div>
+<div class="col-md-8">
+<h2 id="introduction"><strong>Introduction</strong></h2>
 
-<pre><code>Use of Information
-</code></pre>
+<p>You can browse through this documentation using the navigation on the left side. </p>
 
-<h3 id="21-personal-information">2.1 Personal Information:</h3>
+<p>We hope you will find useful information here to be able to build your apps easily.</p>
 
-<p>We use the personal information collected to:</p>
+<h3 id="sml"><strong>SML</strong></h3>
 
-<pre><code>Verify your identity and manage your account
-Associate you with the inviter through the invitation code
-</code></pre>
+<p>SML (Simple Markup Language) is especially invented to build apps with ease.
+You describe the user interface with a simple syntax, have an interactive preview where you can test the app navigation and then you are able to build various of things with it.</p>
 
-<h3 id="22-usage-data">2.2 Usage Data:</h3>
+<h3 id="output"><strong>OUTPUT</strong></h3>
 
-<p>We use the usage data collected to:</p>
+<h4 id="ebook">Ebook</h4>
 
-<pre><code>Improve our App's features and functionality
-Analyze user behavior and preferences
-Provide personalized experiences
-Monitor and prevent fraud or unauthorized use of the App
+<p>The initial goal of NoCode was to be able to build ebooks (.epub), which ca can then sell on Amazon for example.
+Because of the fact that you cannot display all the nice possible content like audio, video and 3D objects we decided to build ebook as native Android app.</p>
 
-Information Sharing
-</code></pre>
+<h4 id="native-app">Native App</h4>
 
-<p>We may share your personal information:</p>
+<p>This initial goal has been transformed into the idea that we could also build rich native apps for Android. You you are able to build your own Android .APK and sell it on Play Store.</p>
 
-<pre><code>With our service providers who assist in delivering our services (e.g., hosting, analytics)
-With your inviter who referred you to the App, linking you both within the App
-When required by law or to protect our legal rights
+<h4 id="dynamic-web-apps">Dynamic Web Apps</h4>
 
-Data Retention
-</code></pre>
+<p>You can publish the whole project on a web server and then you are able to load the project with the NoCodeBrowser. <br />
+In this case you don't only have the possibility to test the app on your phone, you can also deliver your app to your customers and employees using this technology. <br />
+This means zero deployment. You only have to host your project files on a web server. You can also host them ob Github Pages for free.</p>
 
-<p>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.</p>
+<h4 id="source-code">Source Code</h4>
 
-<pre><code>Data Security
-</code></pre>
-
-<p>We implement reasonable security measures to protect your personal information from unauthorized access, disclosure, or alteration. However, please be aware that no method of transmission over the internet or electronic storage is 100% secure.</p>
-
-<pre><code>Your Rights
-</code></pre>
-
-<p>You have certain rights regarding your personal information, including the right to access, update, or delete your information. To exercise these rights or if you have any questions or concerns about our privacy practices, please contact us using the information provided below.</p>
-
-<pre><code>Changes to this Privacy Policy
-</code></pre>
-
-<p>We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the updated policy on our website or through other communication methods.</p>
-
-<pre><code>Contact Us
-</code></pre>
-
-<p>If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at <a href="mailto:artanidos@crowdware.at">artanidos@crowdware.at</a>.</p>
-
-<p>By using the App, you acknowledge that you have read and understood this Privacy Policy and agree to the collection, use, and sharing of your information as described herein.</p>
+<p>Because of the fact that we create Android apps based on Jetpack Compose we can also provide you with source code, so that you can develop your app further.
+So NoCodeDesigner is also a code generator.</p>
 
 </div>
 </div>
