@@ -22,5 +22,7 @@ Page {
 		Button { label: "About" link: "page:about"}
   Spacer { height: 8 }
 		Button { label: "Videos" link: "page:video"}
+  Spacer { height: 8 }
+  Button { label: "External" link: "web:https://nocode.crowdware.at"}
 	}
 }
