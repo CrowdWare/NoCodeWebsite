@@ -1,5 +1,5 @@
 Page {
-    backgroundColor: "#0000ßß"
+    backgroundColor: "#FFFFFF"
     color: "#ffffFF"
     padding: "8"
 
@@ -7,7 +7,7 @@ Page {
         padding: "8"
 
         Markdown {
-            color: "#FF888888"
+            color: "#4C9BD9"
             text: "# About the author"
         }
 
@@ -15,13 +15,12 @@ Page {
         Image { src: "olaf.jpg" }
         Spacer { height: 8 }
         Markdown {
-            text: "
-                Olaf was born 1963 in Hamburg. 
-                He studied graphics design and 
-																human computer interaction design.
-                "
+            color: "#000000"
+            text: "Olaf, the founder of CrowdWare and the inventor of NoCode was born 1963 in Hamburg. 
+                He studied graphics- and 
+																human computer interaction design and he has been working as a software developer for more than 30 years."
         }
         Spacer { height: 8 }
-        Button { label: "Home" link: "page:home" }
+        Button { label: "Back Home" link: "page:home" }
     }
 }

@@ -4,15 +4,6 @@ App {
 	id: "at.crowdware.iav"
  smlVersion: "1.1"
 
-	Navigation {
-		type: "HorizontalPager"
-
-		Item { page: "page:home" }
-		Item { page: "page:about" }
-		Item { page: "page:video" }
-	}
-
-
 
 // deployment start - don't edit here
 Deployment {
