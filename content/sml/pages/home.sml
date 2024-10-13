@@ -23,5 +23,6 @@ You also got a dream?
 Start right now, create a book or even an app and help people with their business and they will help you fulfilling your dream."}
 		Button { label: "About NoCode" link: "page:about"}
 		Button { label: "Introduction Video" link: "page:video"}
+  Sound { src: "birds39-forest-20772.mp3" }
 	}
 }
