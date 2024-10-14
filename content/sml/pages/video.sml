@@ -13,7 +13,7 @@ Page {
     
     Markdown { color: "#000000"text: "### First contact"}
     Spacer { amount: 8 }
-    Youtube { id: "a" }
+    Youtube { id: "eG3MZ-TaAbw" }
     Spacer { weight: 1 }
     Button { label: "Back Home" link: "page:home" }
   }
