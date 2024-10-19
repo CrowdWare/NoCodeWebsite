@@ -98,7 +98,7 @@ You describe the user interface with a simple syntax, have an interactive previe
 ### **OUTPUT**
 #### Ebook
 The initial goal of NoCode was to be able to build ebooks (.epub), which ca can then sell on Amazon for example.
-Because of the fact that you cannot display all the nice possible content like audio, video and 3D objects we decided to build ebook as native Android app.
+Because of the fact that you cannot display all the nice possible content like audio, video and 3D objects we decided to build ebook as native Android app, but still EPUB can be created.
 
 #### Native App
 This initial goal has been transformed into the idea that we could also build rich native apps for Android. You you are able to build your own Android .APK and sell it on Play Store.

@@ -142,7 +142,7 @@
 <div class="col-md-12">
 <h1 id="designer">Designer</h1>
 
-<p>Der Designer ist derzeit noch ein Prototyp, der aber schon so einiges auf dem Kasten hat. <br />
+<p>Der Designer ist derzeit noch ein Prototyp, der aber schon so einiges auf dem Kasten hat.<br />
 Du kannst zum Beispiel jede Änderung, die Du im <strong>SML</strong> (<strong>S</strong>imple <strong>M</strong>arkup <strong>L</strong>anguage) vornimmst, sofort in der Vorschau sehen.  </p>
 
 <p>Wenn Du Buttons verwendest, um zu anderen Seiten zu navigieren, dann funktioniert diese Navigation bereits auch in der Vorschau.  </p>
@@ -190,34 +190,32 @@ Du kannst zum Beispiel jede Änderung, die Du im <strong>SML</strong> (<strong>S
 </div>
 <div class="row">
 <div class="col-md-6">
-<div class="codehilite">
-<pre><span></span><code><span class="nx">Page</span> <span class="p">{</span>
-    <span class="k">backgroundColor:</span> <span class="s2">&quot;#0000ßß&quot;</span> 
-    <span class="k">color:</span> <span class="s2">&quot;#ffffFF&quot;</span> 
-    <span class="k">padding:</span> <span class="s2">&quot;8&quot;</span>
+<pre><code>Page {
+    backgroundColor: "#0000ßß" 
+    color: "#ffffFF" 
+    padding: "8"
 
-    <span class="nx">Column</span> <span class="p">{</span>
-        <span class="k">padding:</span> <span class="s2">&quot;8&quot;</span>
+    Column {
+        padding: "8"
 
-        <span class="nx">Markdown</span> <span class="p">{</span>
-            <span class="k">color:</span> <span class="s2">&quot;#888888&quot;</span>
-            <span class="k">text:</span> <span class="s2">&quot;Lorem ipsum dolor&quot;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+        Markdown {
+            color: "#888888"
+            text: "Lorem ipsum dolor"
+        }
+    }
+}
 </code></pre>
-</div>
 
 </div>
 <div class="col-md-6">
 <p><strong>SML</strong> steht für <strong>S</strong>imple <strong>M</strong>arkup <strong>L</strong>anguage und ist verwandt mit QML (Qt Markup Language).  </p>
 
 <p>Eine App ist in Seiten (Pages) eingeteilt. 
-Der User kann später in der App von Seite zu Seite navigieren. <br />
-Entweder mit einem Tap auf einen Button oder das tappen eines Links. <br />
+Der User kann später in der App von Seite zu Seite navigieren.<br />
+Entweder mit einem Tap auf einen Button oder das tappen eines Links.<br />
 Oder mit einem sogenannten Pager, mit dem man die Seiten nach links oder rechts wischen kann.  </p>
 
-<p>Jede Seite fängt mit <strong>Page</strong> an. <br />
+<p>Jede Seite fängt mit <strong>Page</strong> an.<br />
 Der Inhalt der Page wird zwischen die geschweiften Klammern <strong>{</strong> und <strong>}</strong> gesetzt.</p>
 
 </div>
@@ -225,13 +223,13 @@ Der Inhalt der Page wird zwischen die geschweiften Klammern <strong>{</strong> u
 <div class="row">
 <div class="col-md-12">
 <p>Ein Attribut wie oben backgroundColor (Hintergrundfarbe) wird mit dem Zeichen ":" ein Wert in Hochkomma bzw. Anführungszeichen zugewiesen. 
-In diesem Fall die Zeichenkette "#0000ßß" was den Hexadezimalwert für eine Farbe darstellt. <br />
+In diesem Fall die Zeichenkette "#0000ßß" was den Hexadezimalwert für eine Farbe darstellt.<br />
 So eine Farbwert setzt sich aus dem Zeichen "#" und drei Hexadezimalwerten für die Farbwerte R (rot), G (gelb) und B(blau) zusammen. 
-Die Werte haben einen Bereich von "00" (0) bis "FF" (255). <br />
+Die Werte haben einen Bereich von "00" (0) bis "FF" (255).<br />
 Stellt man den drei Farbwerte noch einen Hexwert voran, so bezeichnet dieser die Transparenz "00" unsichtbar bis "ff" vollständig sichtbar.  </p>
 
 <p>Der Wert "color" steht hier für die Textfarbe und "padding" für die inneren Abstände.  Der Wert padding: "8" bedeutet, das alle Abstände (oben, unten, link und rechts) auf
-8 dp (dichteunabhängige Pixel) eingestellt sind. Bei padding: "8 16 20 4" steht jeder Wert für oben, rechts, unten, links. <br />
+8 dp (dichteunabhängige Pixel) eingestellt sind. Bei padding: "8 16 20 4" steht jeder Wert für oben, rechts, unten, links.<br />
 Also oben 8, rechts 16, unten 20 und links 4.</p>
 
 </div>
@@ -252,17 +250,15 @@ Also oben 8, rechts 16, unten 20 und links 4.</p>
 
 </div>
 <div class="col-md-3">
-<div class="codehilite">
-<pre><span></span><code><span class="nx">Row</span> <span class="p">{</span>
-    <span class="nx">Text</span> <span class="p">{</span> 
-        <span class="k">text:</span> <span class="s2">&quot;Linke Spalte&quot;</span> 
-    <span class="p">}</span>
-    <span class="nx">Text</span> <span class="p">{</span> 
-        <span class="k">text:</span> <span class="s2">&quot;Rechte Spalte&quot;</span> 
-    <span class="p">}</span>
-<span class="p">}</span>
+<pre><code>Row {
+    Text { 
+        text: "Linke Spalte" 
+    }
+    Text { 
+        text: "Rechte Spalte" 
+    }
+}
 </code></pre>
-</div>
 
 </div>
 <div class="col-md-3">
@@ -270,17 +266,15 @@ Also oben 8, rechts 16, unten 20 und links 4.</p>
 
 </div>
 <div class="col-md-3">
-<div class="codehilite">
-<pre><span></span><code><span class="nx">Column</span> <span class="p">{</span>
-    <span class="nx">Text</span> <span class="p">{</span> 
-        <span class="k">text:</span> <span class="s2">&quot;Obere Zeile&quot;</span> 
-    <span class="p">}</span>
-    <span class="nx">Text</span> <span class="p">{</span> 
-        <span class="k">text:</span> <span class="s2">&quot;Untere Zeile&quot;</span> 
-    <span class="p">}</span>
-<span class="p">}</span>
+<pre><code>Column {
+    Text { 
+        text: "Obere Zeile" 
+    }
+    Text { 
+        text: "Untere Zeile" 
+    }
+}
 </code></pre>
-</div>
 
 </div>
 </div>
@@ -294,12 +288,10 @@ Also oben 8, rechts 16, unten 20 und links 4.</p>
 </div>
 <div class="row">
 <div class="col-md-3">
-<div class="codehilite">
-<pre><span></span><code><span class="nx">Text</span> <span class="p">{</span>
-    <span class="k">text:</span> <span class="s2">&quot;Lorem ipsum dolor&quot;</span>
-<span class="p">}</span>
+<pre><code>Text {
+    text: "Lorem ipsum dolor"
+}
 </code></pre>
-</div>
 
 </div>
 <div class="col-md-3">
@@ -307,17 +299,15 @@ Also oben 8, rechts 16, unten 20 und links 4.</p>
 
 </div>
 <div class="col-md-3">
-<div class="codehilite">
-<pre><span></span><code><span class="nx">Markdown</span> <span class="p">{</span>
-    <span class="k">text:</span> <span class="s2">&quot;</span>
-<span class="s2">        # Header</span>
-<span class="s2">        Lorem ipsum</span>
-<span class="s2">        - List item</span>
-<span class="s2">        - List item</span>
-<span class="s2">        &quot;</span>
-<span class="p">}</span>
+<pre><code>Markdown {
+    text: "
+        # Header
+        Lorem ipsum
+        - List item
+        - List item
+        "
+}
 </code></pre>
-</div>
 
 </div>
 <div class="col-md-3">
@@ -327,41 +317,37 @@ Also oben 8, rechts 16, unten 20 und links 4.</p>
 </div>
 <div class="row">
 <div class="col-md-3">
-<p>Schaltflächen definiert man mit dem Element <strong>Button</strong>. <br />
+<p>Schaltflächen definiert man mit dem Element <strong>Button</strong>.<br />
 Das Attribut <strong>label</strong> definiert welcher Text im Button angezeigt werden soll und <strong>link</strong> definiert, was passieren soll, 
-wenn der Nutzer den Button anklickt. <br />
+wenn der Nutzer den Button anklickt.<br />
 In diesem Fall wird die Seite <strong>about</strong> geöffnet.</p>
 
 </div>
 <div class="col-md-3">
-<div class="codehilite">
-<pre><span></span><code><span class="nx">Button</span> <span class="p">{</span>
-    <span class="k">label:</span> <span class="s2">&quot;About&quot;</span>
-    <span class="k">link:</span> <span class="s2">&quot;page:about&quot;</span>
-<span class="p">}</span>
+<pre><code>Button {
+    label: "About"
+    link: "page:about"
+}
 </code></pre>
-</div>
 
 </div>
 <div class="col-md-3">
-<p>Mit dem Element <strong>Video</strong> kann man ein Video anzeigen, das Bestandteil des Projektes ist und im Verzeichnis assets abgelegt wurde. <br />
+<p>Mit dem Element <strong>Video</strong> kann man ein Video anzeigen, das Bestandteil des Projektes ist und im Verzeichnis assets abgelegt wurde.<br />
 Das Attribut <strong>src</strong> definiert die Videodatei hier "beach.mp4" und das Attribut <strong>height</strong> definiert die Höhe des Videos in dp (device pixel).</p>
 
 </div>
 <div class="col-md-3">
-<div class="codehilite">
-<pre><span></span><code><span class="nx">Video</span> <span class="p">{</span> 
-    <span class="k">src:</span> <span class="s2">&quot;beach.mp4&quot;</span> 
-    <span class="k">height:</span> <span class="s2">&quot;120&quot;</span>
-<span class="p">}</span>
+<pre><code>Video { 
+    src: "beach.mp4" 
+    height: "120"
+}
 </code></pre>
-</div>
 
 </div>
 </div>
 <div class="row">
 <div class="col-md-12">
-<p>Dies sind nur ein paar der verfügbaren Elemente und Attribute. Dafür wird es dann später eine Dokumentation geben. <br />
+<p>Dies sind nur ein paar der verfügbaren Elemente und Attribute. Dafür wird es dann später eine Dokumentation geben.<br />
 Wir beschränken uns hier nun erst einmal darauf, das wichtigste zuerst zu implementieren.  </p>
 
 <p>Und da dies ein Open Source Projekt ist, hoffe ich, das sich noch ein paar Entwickler einfinden werden, die den Rest erledigen ;-)</p>
@@ -380,30 +366,28 @@ Wir beschränken uns hier nun erst einmal darauf, das wichtigste zuerst zu imple
 </div>
 <div class="row">
 <div class="col-md-4">
-<div class="codehilite">
-<pre><span></span><code><span class="nx">Markdown</span> <span class="p">{</span> <span class="k">text:</span> <span class="s2">&quot;</span>
-<span class="s2"># Heading 1</span>
-<span class="s2">## Heading 2</span>
-<span class="s2">### Heading 3</span>
-<span class="s2">#### Heading 4</span>
-<span class="s2">##### Heading 5</span>
-<span class="s2">###### Heading 6</span>
-<span class="s2">*Line 2*</span>
-<span class="s2">**Line 3**</span>
-<span class="s2">***Line 4***</span>
-<span class="s2">(c) (tm) (r) &gt; &amp; &lt;</span>
-<span class="s2">(C) (TM) (R)</span>
-<span class="s2">~~this is strikethrough~~</span>
-<span class="s2">&quot;</span><span class="p">}</span>
+<pre><code>Markdown { text: "
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+*Line 2*
+**Line 3**
+***Line 4***
+(c) (tm) (r) &amp;gt; &amp;amp; &amp;lt;
+(C) (TM) (R)
+~~this is strikethrough~~
+"}
 </code></pre>
-</div>
 
 </div>
 <div class="col-md-4">
 <p>Mit der Hilfe von Markdown, einer Sprache die zum Beispiel von GitHub, Reddit, Stack Overflow und Trello genutzt wird, um Text zu formatieren,
 kannst Du sehr einfach und schnell Text eingeben.</p>
 
-<p>Mit dem Zeichen # leitest Du zum Beispiel eine Überschrift (&lt;H1&gt;) ein. <br />
+<p>Mit dem Zeichen # leitest Du zum Beispiel eine Überschrift (&lt;H1&gt;) ein.<br />
 Stellst Du der Zeile zwei ## dieser Zeichen voran, so wird ein Untertitel (&lt;H2&gt;) erzeugt und so weiter bis &lt;H6&gt;.  </p>
 
 </div>
@@ -416,9 +400,9 @@ Stellst Du der Zeile zwei ## dieser Zeichen voran, so wird ein Untertitel (&lt;H
 <section class="container">
 <div class="row">
 <div class="col-md-12">
-<p>Willst Du ein Wort <em>kursiv</em> darstellen, dann stellst du es innerhalb von zwei * Zeichen. <br />
-Willst Du ein Wort <strong>fett</strong> darstellen, dann stellst du es innerhalb von zwei mal <em>* Zeichen. <br />
-<strong></em>Fett und kursiv<em></strong> wird dadurch erreicht, dass du eine´oder mehrere Wörter innerhalb von zwei mal *</em>* Zeichen stellst. <br />
+<p>Willst Du ein Wort <em>kursiv</em> darstellen, dann stellst du es innerhalb von zwei * Zeichen.<br />
+Willst Du ein Wort <strong>fett</strong> darstellen, dann stellst du es innerhalb von zwei mal <em>* Zeichen.<br />
+<strong></em>Fett und kursiv<em></strong> wird dadurch erreicht, dass du eine´oder mehrere Wörter innerhalb von zwei mal *</em>* Zeichen stellst.<br />
 Wenn Du den Text <del>durchgestrichen</del> darstellen möchtest, benutzt du zwei ~~ Zeichen vor und zwei Zeichen hinter dem Wort.</p>
 
 </div>
