@@ -190,21 +190,23 @@ For example, you can see any changes you make in the SML (<strong>S</strong>impl
 </div>
 <div class="row">
 <div class="col-md-6">
-<pre><code>Page {
-    backgroundColor: "#0000ßß" 
-    color: "#ffffFF" 
-    padding: "8"
+<div class="codehilite">
+<pre><span></span><code><span class="nx">Page</span> <span class="p">{</span>
+    <span class="k">backgroundColor:</span> <span class="s2">&quot;#0000ßß&quot;</span> 
+    <span class="k">color:</span> <span class="s2">&quot;#ffffFF&quot;</span> 
+    <span class="k">padding:</span> <span class="s2">&quot;8&quot;</span>
 
-    Column {
-        padding: "8"
+    <span class="nx">Column</span> <span class="p">{</span>
+        <span class="k">padding:</span> <span class="s2">&quot;8&quot;</span>
 
-        Markdown {
-            color: "#888888"
-            text: "Lorem ipsum dolor"
-        }
-    }
-}
+        <span class="nx">Markdown</span> <span class="p">{</span>
+            <span class="k">color:</span> <span class="s2">&quot;#888888&quot;</span>
+            <span class="k">text:</span> <span class="s2">&quot;Lorem ipsum dolor&quot;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
+</div>
 
 </div>
 <div class="col-md-6">
@@ -248,15 +250,17 @@ So, top is 8, right is 16, bottom is 20, and left is 4.</p>
 
 </div>
 <div class="col-md-3">
-<pre><code>Row {
-    Text { 
-        text: "left column" 
-    }
-    Text { 
-        text: "right column" 
-    }
-}
+<div class="codehilite">
+<pre><span></span><code><span class="nx">Row</span> <span class="p">{</span>
+    <span class="nx">Text</span> <span class="p">{</span> 
+        <span class="k">text:</span> <span class="s2">&quot;left column&quot;</span> 
+    <span class="p">}</span>
+    <span class="nx">Text</span> <span class="p">{</span> 
+        <span class="k">text:</span> <span class="s2">&quot;right column&quot;</span> 
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
+</div>
 
 </div>
 <div class="col-md-3">
@@ -264,11 +268,13 @@ So, top is 8, right is 16, bottom is 20, and left is 4.</p>
 
 </div>
 <div class="col-md-3">
-<pre><code>Column {
-    Text { text: "upper row" }
-    Text { text: "lower row" }
-}
+<div class="codehilite">
+<pre><span></span><code><span class="nx">Column</span> <span class="p">{</span>
+    <span class="nx">Text</span> <span class="p">{</span> <span class="k">text:</span> <span class="s2">&quot;upper row&quot;</span> <span class="p">}</span>
+    <span class="nx">Text</span> <span class="p">{</span> <span class="k">text:</span> <span class="s2">&quot;lower row&quot;</span> <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
+</div>
 
 </div>
 </div>
@@ -282,10 +288,12 @@ So, top is 8, right is 16, bottom is 20, and left is 4.</p>
 </div>
 <div class="row">
 <div class="col-md-3">
-<pre><code>Text {
-    text: "Lorem ipsum dolor"
-}
+<div class="codehilite">
+<pre><span></span><code><span class="nx">Text</span> <span class="p">{</span>
+    <span class="k">text:</span> <span class="s2">&quot;Lorem ipsum dolor&quot;</span>
+<span class="p">}</span>
 </code></pre>
+</div>
 
 </div>
 <div class="col-md-3">
@@ -293,15 +301,17 @@ So, top is 8, right is 16, bottom is 20, and left is 4.</p>
 
 </div>
 <div class="col-md-3">
-<pre><code>Markdown {
-    text: "
-        # Header
-        Lorem ipsum
-        - List item
-        - List item
-        "
-}
+<div class="codehilite">
+<pre><span></span><code><span class="nx">Markdown</span> <span class="p">{</span>
+    <span class="k">text:</span> <span class="s2">&quot;</span>
+<span class="s2">        # Header</span>
+<span class="s2">        Lorem ipsum</span>
+<span class="s2">        - List item</span>
+<span class="s2">        - List item</span>
+<span class="s2">        &quot;</span>
+<span class="p">}</span>
 </code></pre>
+</div>
 
 </div>
 <div class="col-md-3">
@@ -317,11 +327,13 @@ In this case, the <strong>about</strong> page will be opened.</p>
 
 </div>
 <div class="col-md-3">
-<pre><code>Button {
-    label: "About"
-    link: "page:about"
-}
+<div class="codehilite">
+<pre><span></span><code><span class="nx">Button</span> <span class="p">{</span>
+    <span class="k">label:</span> <span class="s2">&quot;About&quot;</span>
+    <span class="k">link:</span> <span class="s2">&quot;page:about&quot;</span>
+<span class="p">}</span>
 </code></pre>
+</div>
 
 </div>
 <div class="col-md-3">
@@ -330,11 +342,13 @@ The <strong>src</strong> attribute specifies the video file, in this case, "beac
 
 </div>
 <div class="col-md-3">
-<pre><code>Video { 
-    src: "beach.mp4" 
-    height: "120"
-}
+<div class="codehilite">
+<pre><span></span><code><span class="nx">Video</span> <span class="p">{</span> 
+    <span class="k">src:</span> <span class="s2">&quot;beach.mp4&quot;</span> 
+    <span class="k">height:</span> <span class="s2">&quot;120&quot;</span>
+<span class="p">}</span>
 </code></pre>
+</div>
 
 </div>
 </div>
@@ -359,23 +373,25 @@ For now, we will focus on implementing the most important features first.</p>
 </div>
 <div class="row">
 <div class="col-md-4">
-<pre><code>Markdown { 
-    text: "
-        # Heading 1
-        ## Heading 2
-        ### Heading 3
-        #### Heading 4
-        ##### Heading 5
-        ###### Heading 6
-        *Line 2*
-        **Line 3**
-        ***Line 4***
-        (c) (tm) (r) &amp;gt; &amp;amp; &amp;lt;
-        (C) (TM) (R)
-        ~~this is strikethrough~~
-        "
-}
+<div class="codehilite">
+<pre><span></span><code><span class="nx">Markdown</span> <span class="p">{</span> 
+    <span class="k">text:</span> <span class="s2">&quot;</span>
+<span class="s2">        # Heading 1</span>
+<span class="s2">        ## Heading 2</span>
+<span class="s2">        ### Heading 3</span>
+<span class="s2">        #### Heading 4</span>
+<span class="s2">        ##### Heading 5</span>
+<span class="s2">        ###### Heading 6</span>
+<span class="s2">        *Line 2*</span>
+<span class="s2">        **Line 3**</span>
+<span class="s2">        ***Line 4***</span>
+<span class="s2">        (c) (tm) (r) &gt; &amp; &lt;</span>
+<span class="s2">        (C) (TM) (R)</span>
+<span class="s2">        ~~this is strikethrough~~</span>
+<span class="s2">        &quot;</span>
+<span class="p">}</span>
 </code></pre>
+</div>
 
 </div>
 <div class="col-md-4">
