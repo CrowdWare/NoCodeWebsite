@@ -112,7 +112,7 @@ So far, none have prevailed, and as a programmer, you feel it, as you had to sup
 
                 Markdown {
                     text: "
-#### Here a sittle example 
+#### Here is a simple example 
 ```html
 .box {
   -webkit-border-radius: 10px; /* Chrome and Safari */
