@@ -205,7 +205,7 @@ The app is instantly available online, and you and anyone else to whom you send 
                 Text {
                     text: "&lt;!-- CALLOUT --&gt;
 &lt;div class=&quot;bs-callout text-center styleBackground&quot;&gt;
-	&lt;h3&gt;Do you want to have the &lt;strong&gt;APP&lt;/strong&gt; for the desktop and start creating something NEW?&lt;a href=&quot;#&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
+	&lt;h3&gt;Do you want to have the &lt;strong&gt;APP&lt;/strong&gt; for the desktop and start creating something NEW?&lt;a href=&quot;https://github.com/CrowdWare/NoCodeDesigner/releases&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;!-- /CALLOUT --&gt;"
                     adminlabel: "callout"
@@ -294,6 +294,7 @@ Sometimes, as in this case, we also skip a step.
 
 We have decided to provide a functional solution first and then finance further development through crowdfunding.  
 If you understand the idea behind NoCode and recognize the potential it holds, I invite you to support the project.
+
 "
                     adminlabel: "Finanzierung"
                 }
@@ -307,6 +308,7 @@ If you understand the idea behind NoCode and recognize the potential it holds, I
 
                 Image {
                     src: "crowdfunding.jpg"
+                    link: "https://igg.me/at/nocodedesigner"
                 }
             }
 
@@ -316,7 +318,7 @@ If you understand the idea behind NoCode and recognize the potential it holds, I
                 Markdown {
                     text: "
 ## Crowdfunding
-In the crowdfunding campaign, we want to finance the development costs that have already been incurred as well as those that will arise.  
+In the &lt;a target=&quot;_blank&quot; href=&quot;https://igg.me/at/nocodedesigner&quot;&gt;crowdfunding campaign&lt;/a&gt;, we want to finance the development costs that have already been incurred as well as those that will arise.  
 If the funding goes through, we can bring the product to market for free, benefiting every future user.  
 Since we have ongoing costs and also want to fund other projects, we will offer a commercial option in addition to the free version.
 

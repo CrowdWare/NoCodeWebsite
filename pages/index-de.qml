@@ -205,7 +205,7 @@ Die App ist sofort online verfügbar und Du und jeder andere, den du einen entsp
                 Text {
                     text: "&lt;!-- CALLOUT --&gt;
 &lt;div class=&quot;bs-callout text-center styleBackground&quot;&gt;
-	&lt;h3&gt;Willst Du die &lt;strong&gt;APP&lt;/strong&gt; für den Desktop haben und anfangen NEUES zu schaffen?&lt;a href=&quot;#&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
+	&lt;h3&gt;Willst Du die &lt;strong&gt;APP&lt;/strong&gt; für den Desktop haben und anfangen NEUES zu schaffen?&lt;a href=&quot;https://github.com/CrowdWare/NoCodeDesigner/releases&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;!-- /CALLOUT --&gt;
 
@@ -305,6 +305,7 @@ Wenn Du die Idee hinter NoCode verstanden hast, das Potenzial dahinter erkennst,
 
                 Image {
                     src: "crowdfunding.jpg"
+                    link: "https://igg.me/at/nocodedesigner"
                 }
             }
 
@@ -315,11 +316,12 @@ Wenn Du die Idee hinter NoCode verstanden hast, das Potenzial dahinter erkennst,
                     text: "
 
 ## CrowdFunding
-In der CrowdFunding Kampagne wollen wir die Entwicklungskosten, die bisher aufgelaufen sind und diese, die noch entstehen werden, finanzieren.
+In der &lt;a target=&quot;_blank&quot; href=&quot;https://igg.me/at/nocodedesigner&quot;&gt;CrowdFunding Kampagne&lt;/a&gt; wollen wir die Entwicklungskosten, die bisher aufgelaufen sind und diese, die noch entstehen werden, finanzieren.
 Wenn die Finanzierung zustande kommt, dann können wir das Produkt kostenlos auf den Markt bringen und jeder zukünftige Nutzer profiziert davon.  
 Da wir laufende Kosten haben und auch andere Projekte finanzieren möchten, werden wir zusätzlich zu der kostenlosen Variante auch ein kommerzielles Angebot anbieten.
 
-Aber selbst das kommerzielle Angebot wird weit aus günstiger sein, als das unserer Konkurrenz, denn wir arbeiten gemeinnützig und sind nicht an Profit interessiert.  "
+Aber selbst das kommerzielle Angebot wird weit aus günstiger sein, als das unserer Konkurrenz, denn wir arbeiten gemeinnützig und sind nicht an Profit interessiert.  
+"
                 }
             }
         }
