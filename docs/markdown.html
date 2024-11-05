@@ -4,7 +4,7 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-<title>Page</title>
+<title>markdown</title>
 <meta name="keywords" content="android,app,no code" />
 <meta name="description" content="NoCode Designer" />
 <meta name="Author" content="Olaf" />
@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://www.shifting.site/assets/images/happypeople.png" />
 <meta property="og:type" content="image/png" />
 <meta property="og:url" content="https://www.shifting.site/" /> 
-<meta property="og:title" content="Page" />
+<meta property="og:title" content="markdown" />
 <meta property="og:description" content="Die Idee hinter Shift ist die Möglichkeit, mit einer neuen virtuellen Flüssigkeit, die von Menschen hergestellt wird, ein universelles Grundeinkommen zu schaffen." />
 
 <!-- WEB FONTS -->
@@ -129,11 +129,11 @@
 		
 <header id="page-title">
 	<div class="container">
-		<h1>Page</h1>
+		<h1>Markdown</h1>
 		<ul class="breadcrumb">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="docu.html">Documentation</a></li>
-			<li class="active">Page</li>
+			<li class="active">Markdown</li>
 		</ul>
 	</div>
 </header>
@@ -148,23 +148,153 @@
   </li>
 </ul>
 
-<h4 id="todo">TODO</h4>
+<h4 id="markdown">Markdown</h4>
 
 <ul class="nav flex-column">  
     <li class="nav-item">
-        <a class="nav-link" href="#">TODO</a>
+        <a class="nav-link" href="#header">Header</a>
+    </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#styling">Styling</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#links">Links</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#images">Images</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#chars">Special characters</a>
     </li>
 </ul>
 
 </div>
 <div class="col-md-8">
-<h2 id="page">Page</h2>
+<h1 id="markdown-documentation">Markdown Documentation</h1>
 
-<p>The page is the main document in all apps.<br />
-<br>
-All apps are loading the home page when they are started. That's also the reason why this page can not be renamed or be deleted.<br />
-<br>
-For more information about how to write a page have a look at the <a href="sml.html">SML definition</a> <a href="sml.html">here</a>.</p>
+<p>Markdown is a lightweight markup language that provides a simple syntax for formatting text. It is widely used for writing documentation, README files, and online content. 
+This guide explains the current Markdown features supported in NoCodeDesigner.</p>
+
+<h2 id="features-implemented">Features Implemented</h2>
+
+<p><a id="header"></a></p>
+
+<h3 id="1-headers">1. Headers</h3>
+
+<p>Headers in Markdown allow you to define section titles and headings. They are created using the <code>#</code> symbol, with the number of <code>#</code> symbols corresponding to the header level. 
+For example:</p>
+
+<pre><code># Header 1
+## Header 2
+### Header 3
+#### Header 4
+</code></pre>
+
+<ul>
+<li><strong>Usage</strong>: Headers help organize content into sections and subsections.</li>
+<li><strong>Syntax</strong>: Place <code>#</code> at the beginning of a line, followed by a space and the header text.</li>
+<li><strong>Levels</strong>: Markdown supports up to six header levels, from <code>#</code> (largest) to <code>######</code> (smallest).</li>
+</ul>
+
+<p><strong>Example:</strong></p>
+
+<pre><code># Main Header
+## Subheader
+### Sub-subheader
+</code></pre>
+
+<p><a id="styling"></a></p>
+
+<h3 id="2-text-styling">2. Text Styling</h3>
+
+<p>Markdown provides various options for styling text, such as bold, italic, and strikethrough. These styles help to emphasize important parts of the text.</p>
+
+<ul>
+<li><strong>Bold</strong>: Use double asterisks <code>**text**</code> or double underscores <code>__text__</code> to make text bold.</li>
+</ul>
+
+<pre><code>**This is bold text**
+</code></pre>
+
+<ul>
+<li><strong>Italic</strong>: Use a single asterisk <code>*text*</code> or a single underscore <code>_text_</code> for italics.</li>
+</ul>
+
+<pre><code>*This is italic text*
+</code></pre>
+
+<ul>
+<li><strong>Strikethrough</strong>: Use double tildes <code>~~text~~</code> for strikethrough text.</li>
+</ul>
+
+<pre><code>~~This text is crossed out~~
+</code></pre>
+
+<p><a id="links"></a></p>
+
+<h3 id="3-hyperlinks">3. Hyperlinks</h3>
+
+<p>Markdown also allows the creation of hyperlinks, which link to external or internal content. Use square brackets <code>[]</code> for the link text and parentheses <code>()</code> for the URL.</p>
+
+<p><strong>Syntax:</strong></p>
+
+<pre><code>[Link Text](https://example.com)
+</code></pre>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>For more information, visit the [Markdown Guide](https://www.markdownguide.org).
+</code></pre>
+
+<p><a id="images"></a></p>
+
+<h3 id="4-images">4. Images</h3>
+
+<p>Images can be embedded in Markdown similarly to hyperlinks, with an exclamation mark <code>!</code> at the beginning, followed by the alt text in square brackets <code>[]</code> and the image 
+URL in parentheses <code>()</code>.</p>
+
+<p><strong>Syntax:</strong></p>
+
+<pre><code>![Alt Text](https://example.com/image.jpg)
+</code></pre>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>![Markdown Logo](https://markdown-here.com/img/icon256.png)
+</code></pre>
+
+<p><a id="chars"></a></p>
+
+<h3 id="5-special-characters">5. Special Characters</h3>
+
+<p>We have implemented some of the possible special characters.<br />
+(c) renders a &copy;  copyright symbol<br />
+(r) renders a &reg; registered brand symbol<br />
+(tm) renders a &trade; trademark symbol  </p>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>(c) 2024 your name
+(r) Your brand
+Your product(tm) 
+</code></pre>
+
+<h3 id="example-document">Example Document</h3>
+
+<p>Here is a combined example showing the use of headers, styling, hyperlinks, and images:</p>
+
+<pre><code># Welcome to Markdown
+
+**Markdown** is a lightweight markup language that can be used to *format text*, ~~cross out text~~, add [links](https://www.example.com), and display images!
+
+![Markdown Logo](https://markdown-here.com/img/icon256.png)
+</code></pre>
+
+<hr />
+
+<p>This page provides a basic overview of the currently supported Markdown features. For more complex formatting or additional options, future updates may include 
+extended Markdown features. If you want to use additional feature like lists, tables, codeblocks or the like, then please start a feature request. 
+We really want to implement everything whats needed by most of our users.</p>
 
 </div>
 </div>

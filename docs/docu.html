@@ -139,45 +139,29 @@
 <section class="container">
 <div class="row">
 <div class="col-md-4">
-<h4 id="documents">Documents</h4>
+<h4 id="document-types">Document Types</h4>
 
 <ul class="nav flex-column">
   <li class="nav-item">
-    <a class="nav-link" href="#">App</a>
+    <a class="nav-link" href="app.html">App</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="epub.html#ebook">Book</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="page.html">Page</a>
   </li>
-</ul>
-
-<h4 id="elements">Elements</h4>
-
-<ul class="nav flex-column">  
-    <li class="nav-item">
-        <a class="nav-link" href="#">Text</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Markdown</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Spacer</a>
-    </li>   
-</ul>
-
-<h4 id="layout">Layout</h4>
-
-<ul class="nav flex-column">  
-    <li class="nav-item">
-        <a class="nav-link" href="#">Row</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Column</a>
-    </li>   
+  <li class="nav-item">
+    <a class="nav-link" href="part.html">Part</a>
+  </li>
 </ul>
 
 <h4 id="build">Build</h4>
 
 <ul class="nav flex-column">  
+    <li class="nav-item">
+        <a class="nav-link" href="epub.html">Ebook (.EPUB)</a>
+    </li>
     <li class="nav-item">
         <a class="nav-link" href="#">Browsable App (.SML)</a>
     </li>
@@ -199,15 +183,31 @@
 
 <h3 id="sml"><strong>SML</strong></h3>
 
-<p>SML (Simple Markup Language) is especially invented to build apps with ease.
+<p><a href="sml.html">SML (Simple Markup Language)</a> is specially invented to build apps with ease.
 You describe the user interface with a simple syntax, have an interactive preview where you can test the app navigation and then you are able to build various of things with it.</p>
+
+<h3 id="document-types"><strong>Document Types</strong></h3>
+
+<p>In NoCodeDesigner you can specify multiple different documents.
+The first is <strong>Book</strong> stored in the file <em>book.sml</em>, with which you can describe an epub project (ebook).<br />
+Then we have a <strong>Part</strong> stored in files like <em>home.md</em> inside the parts folder. This represents a page in an ebook written in the <a href="markdown.html">Markdown language</a>.<br />
+<br>
+If you want to create modern ebooks with interactive content then you will use the <strong>App</strong> as your preferred document type.<br />
+<strong>App</strong> stored in the file <em>app.sml</em>, with which you can describe a mobile app.<br />
+Then we have a <strong>Page</strong> stored in files like <em>home.sml</em> inside the pages folder. This represents a page in a mobile app. It is written in <a href="sml.html">Simple Markup Language</a>.<br />
+<br>
+You can see its going up and down with the languages ;-)<br />
+So if you want to write complex books you should use markup.<br />
+And if you want to write simple books you should use markdown.<br />
+Best things is...you can also mix both. So you are able to write books together with someone who prefers the opposit than you do.<br />
+One author is writing texts and the other one is embedding layouts and interactions.</p>
 
 <h3 id="output"><strong>OUTPUT</strong></h3>
 
 <h4 id="ebook">Ebook</h4>
 
-<p>The initial goal of NoCode was to be able to build ebooks (.epub), which ca can then sell on Amazon for example.
-Because of the fact that you cannot display all the nice possible content like audio, video and 3D objects we decided to build ebook as native Android app, but still EPUB can be created.</p>
+<p>The initial goal of NoCode was to be able to build ebooks (.epub), which you can then sell on Amazon for example.
+Because of the fact that you cannot display all the nice possible content like audio, video and 3D objects we decided to additionally build an ebook as native Android app, but still EPUB can be created.</p>
 
 <h4 id="native-app">Native App</h4>
 
@@ -320,7 +320,7 @@ So NoCodeDesigner is also a code generator.</p>
 		</div>
 	</div>
 <!-- footer content -->
-
+<script defer src="https://cloud.umami.is/script.js" data-website-id="652ae763-2e0b-4156-b6da-c9e6da300577"></script>
 </footer>
 <!-- /FOOTER -->
 

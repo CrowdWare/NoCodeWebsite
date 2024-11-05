@@ -34,41 +34,28 @@ Content {
                 span: 4
 
                 Markdown {
-                    text: "#### Documents
+                    text: "#### Document Types
 &lt;ul class=&quot;nav flex-column&quot;&gt;
   &lt;li class=&quot;nav-item&quot;&gt;
-    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;App&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;app.html&quot;&gt;App&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;epub.html#ebook&quot;&gt;Book&lt;/a&gt;
   &lt;/li&gt;
   &lt;li class=&quot;nav-item&quot;&gt;
     &lt;a class=&quot;nav-link&quot; href=&quot;page.html&quot;&gt;Page&lt;/a&gt;
   &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;part.html&quot;&gt;Part&lt;/a&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-#### Elements
-&lt;ul class=&quot;nav flex-column&quot;&gt;  
-	&lt;li class=&quot;nav-item&quot;&gt;
-    	&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Text&lt;/a&gt;
-  	&lt;/li&gt;
-  	&lt;li class=&quot;nav-item&quot;&gt;
-    	&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Markdown&lt;/a&gt;
-  	&lt;/li&gt;
-  	&lt;li class=&quot;nav-item&quot;&gt;
-    	&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Spacer&lt;/a&gt;
-  	&lt;/li&gt;	
-&lt;/ul&gt;
-
-#### Layout
-&lt;ul class=&quot;nav flex-column&quot;&gt;  
-	&lt;li class=&quot;nav-item&quot;&gt;
-    	&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Row&lt;/a&gt;
-  	&lt;/li&gt;
-  	&lt;li class=&quot;nav-item&quot;&gt;
-    	&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Column&lt;/a&gt;
-  	&lt;/li&gt;	
-&lt;/ul&gt;
 
 #### Build
 &lt;ul class=&quot;nav flex-column&quot;&gt;  
+	&lt;li class=&quot;nav-item&quot;&gt;
+    	&lt;a class=&quot;nav-link&quot; href=&quot;epub.html&quot;&gt;Ebook (.EPUB)&lt;/a&gt;
+  	&lt;/li&gt;
 	&lt;li class=&quot;nav-item&quot;&gt;
     	&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Browsable App (.SML)&lt;/a&gt;
   	&lt;/li&gt;
@@ -92,13 +79,28 @@ You can browse through this documentation using the navigation on the left side.
 We hope you will find useful information here to be able to build your apps easily.
 
 ### **SML**
-SML (Simple Markup Language) is especially invented to build apps with ease.
+&lt;a href=&quot;sml.html&quot;&gt;SML (Simple Markup Language)&lt;/a&gt; is specially invented to build apps with ease.
 You describe the user interface with a simple syntax, have an interactive preview where you can test the app navigation and then you are able to build various of things with it.
+
+### **Document Types**
+In NoCodeDesigner you can specify multiple different documents.
+The first is **Book** stored in the file *book.sml*, with which you can describe an epub project (ebook).  
+Then we have a **Part** stored in files like *home.md* inside the parts folder. This represents a page in an ebook written in the &lt;a href=&quot;markdown.html&quot;&gt;Markdown language&lt;/a&gt;.  
+&lt;br&gt;
+If you want to create modern ebooks with interactive content then you will use the **App** as your preferred document type.  
+**App** stored in the file *app.sml*, with which you can describe a mobile app.  
+Then we have a **Page** stored in files like *home.sml* inside the pages folder. This represents a page in a mobile app. It is written in &lt;a href=&quot;sml.html&quot;&gt;Simple Markup Language&lt;/a&gt;.  
+&lt;br&gt;
+You can see its going up and down with the languages ;-)  
+So if you want to write complex books you should use markup.  
+And if you want to write simple books you should use markdown.  
+Best things is...you can also mix both. So you are able to write books together with someone who prefers the opposit than you do.  
+One author is writing texts and the other one is embedding layouts and interactions.
 
 ### **OUTPUT**
 #### Ebook
-The initial goal of NoCode was to be able to build ebooks (.epub), which ca can then sell on Amazon for example.
-Because of the fact that you cannot display all the nice possible content like audio, video and 3D objects we decided to build ebook as native Android app, but still EPUB can be created.
+The initial goal of NoCode was to be able to build ebooks (.epub), which you can then sell on Amazon for example.
+Because of the fact that you cannot display all the nice possible content like audio, video and 3D objects we decided to additionally build an ebook as native Android app, but still EPUB can be created.
 
 #### Native App
 This initial goal has been transformed into the idea that we could also build rich native apps for Android. You you are able to build your own Android .APK and sell it on Play Store.

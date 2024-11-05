@@ -4,7 +4,7 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-<title>Page</title>
+<title>sml</title>
 <meta name="keywords" content="android,app,no code" />
 <meta name="description" content="NoCode Designer" />
 <meta name="Author" content="Olaf" />
@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://www.shifting.site/assets/images/happypeople.png" />
 <meta property="og:type" content="image/png" />
 <meta property="og:url" content="https://www.shifting.site/" /> 
-<meta property="og:title" content="Page" />
+<meta property="og:title" content="sml" />
 <meta property="og:description" content="Die Idee hinter Shift ist die Möglichkeit, mit einer neuen virtuellen Flüssigkeit, die von Menschen hergestellt wird, ein universelles Grundeinkommen zu schaffen." />
 
 <!-- WEB FONTS -->
@@ -129,11 +129,11 @@
 		
 <header id="page-title">
 	<div class="container">
-		<h1>Page</h1>
+		<h1>SML</h1>
 		<ul class="breadcrumb">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="docu.html">Documentation</a></li>
-			<li class="active">Page</li>
+			<li class="active">SML</li>
 		</ul>
 	</div>
 </header>
@@ -148,23 +148,155 @@
   </li>
 </ul>
 
-<h4 id="todo">TODO</h4>
+<h4 id="sml">SML</h4>
 
 <ul class="nav flex-column">  
     <li class="nav-item">
-        <a class="nav-link" href="#">TODO</a>
+        <a class="nav-link" href="#elements">Elements</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#layout">Layout</a>
     </li>
 </ul>
 
 </div>
 <div class="col-md-8">
-<h2 id="page">Page</h2>
+<h1 id="simple-markup-language-sml-documentation-for-designers">Simple Markup Language (SML) Documentation for Designers</h1>
 
-<p>The page is the main document in all apps.<br />
-<br>
-All apps are loading the home page when they are started. That's also the reason why this page can not be renamed or be deleted.<br />
-<br>
-For more information about how to write a page have a look at the <a href="sml.html">SML definition</a> <a href="sml.html">here</a>.</p>
+<h2 id="overview">Overview</h2>
+
+<p>Simple Markup Language (SML) is a user-friendly markup language designed for creating structured documents, particularly for interactive eBooks and mobile applications. 
+SML allows designers to define content layout and properties using a simple and intuitive syntax, making it easy to craft visually appealing and interactive user experiences.</p>
+
+<h2 id="key-features">Key Features</h2>
+
+<p>SML offers a variety of features that enable designers to create engaging content:</p>
+
+<ul>
+<li><strong>Structured Syntax</strong>: SML provides a clear structure for defining elements and their properties, allowing for easy interpretation and rendering by applications.</li>
+<li><strong>Interactive Components</strong>: Designers can create interactive elements such as buttons, links, and media content, enhancing user engagement and navigation within the content.</li>
+<li><strong>Markdown Support</strong>: The inclusion of Markdown allows for easy formatting of text, enabling designers to incorporate headers, bold text, lists, and other formatting options
+seamlessly.</li>
+</ul>
+
+<h2 id="basic-syntax">Basic Syntax</h2>
+
+<p><a id="elements"></a></p>
+
+<h3 id="elements">Elements</h3>
+
+<p>SML consists of various elements that can be combined to form a complete document. Each element represents a specific type of content or layout. Here are some common elements:</p>
+
+<p><strong>Text Elements</strong>: Used for displaying text, including formatted text using Markdown.</p>
+
+<p><strong>Example:</strong></p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="n">Markdown</span> <span class="p">{</span>
+  <span class="n">text</span><span class="p">:</span> <span class="s2">&quot;</span>
+<span class="s2">    # Title</span>
+<span class="s2">    ## Subtitle</span>
+<span class="s2">    This is a **bold** statement.&quot;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p><strong>Image Elements</strong>: Used to embed images within the document.</p>
+
+<p><strong>Example:</strong></p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="n">Image</span> <span class="p">{</span> <span class="n">src</span><span class="p">:</span> <span class="s2">&quot;image.png&quot;</span> <span class="p">}</span>
+</code></pre>
+</div>
+
+<p><strong>Video Elements</strong>: Used to embed videos from local sources or external URLs.</p>
+
+<p><strong>Examples:</strong></p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="n">Video</span> <span class="p">{</span> <span class="n">src</span><span class="p">:</span> <span class="s2">&quot;beach.mp4&quot;</span> <span class="p">}</span>
+<span class="n">Video</span> <span class="p">{</span> <span class="n">src</span><span class="p">:</span> <span class="s2">&quot;https://example.com/beach.mp4&quot;</span> <span class="p">}</span>
+</code></pre>
+</div>
+
+<p><strong>YouTube Elements</strong>: Used to embed YouTube videos directly.</p>
+
+<p><strong>Example:</strong></p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="n">YouTube</span> <span class="p">{</span> <span class="n">id</span><span class="p">:</span> <span class="s2">&quot;pOL66P0FdPQ&quot;</span> <span class="p">}</span>
+</code></pre>
+</div>
+
+<p><strong>Scene Elements</strong>: Used for 3D content, allowing for interactive 3D models with environment settings.</p>
+
+<p><strong>Example:</strong></p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="n">Scene</span> <span class="p">{</span>
+  <span class="n">height</span><span class="p">:</span> <span class="mi">200</span> 
+  <span class="n">model</span><span class="p">:</span> <span class="s2">&quot;BusterDrone.gltf&quot;</span> 
+  <span class="n">skybox</span><span class="p">:</span> <span class="s2">&quot;venetian_crossroads_2k_skybox.ktx&quot;</span>
+  <span class="n">ibl</span><span class="p">:</span> <span class="s2">&quot;venetian_crossroads_2k_ibl.ktx&quot;</span> 
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p><strong>Column Elements</strong>: Used to organize content vertically, allowing for nesting of other elements.</p>
+
+<p><strong>Example:</strong></p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="n">Column</span> <span class="p">{</span>
+  <span class="n">Text</span> <span class="p">{</span> <span class="n">text</span><span class="p">:</span> <span class="s2">&quot;Lorem ipsum&quot;</span> <span class="p">}</span>
+  <span class="n">Row</span> <span class="p">{</span>
+    <span class="n">Button</span> <span class="p">{</span> <span class="n">label</span><span class="p">:</span> <span class="s2">&quot;Back&quot;</span> <span class="p">}</span>
+    <span class="n">Button</span> <span class="p">{</span> <span class="n">label</span><span class="p">:</span> <span class="s2">&quot;Next&quot;</span> <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p><strong>Row Elements</strong>: Used to arrange elements horizontally within a column.</p>
+
+<p><strong>Spacer Elements</strong>: Used to create space between components, allowing for better layout control.</p>
+
+<p><strong>Example:</strong></p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="n">Spacer</span> <span class="p">{</span> <span class="n">amount</span><span class="p">:</span> <span class="mi">16</span> <span class="p">}</span>
+</code></pre>
+</div>
+
+<p><strong>Button Elements</strong>: Used to create interactive buttons that can link to other pages or actions.</p>
+
+<p><strong>Example:</strong></p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="n">Button</span> <span class="p">{</span> <span class="n">label</span><span class="p">:</span> <span class="s2">&quot;Next&quot;</span> <span class="n">link</span><span class="p">:</span> <span class="s2">&quot;page:next&quot;</span> <span class="p">}</span>
+</code></pre>
+</div>
+
+<p><a id="layout"></a></p>
+
+<h3 id="layout-organization">Layout Organization</h3>
+
+<p>SML allows for the organization of elements into logical structures. This can include vertical stacking of components, grouping of related items, 
+and the use of spacers to adjust spacing dynamically. Columns can contain Rows for horizontal arrangements, enabling a flexible layout.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>Designers can leverage SML to create visually compelling and user-friendly layouts for interactive content. By combining different elements effectively, 
+SML facilitates the development of rich and engaging eBooks that can adapt to various screen sizes and devices.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>SML serves as a powerful tool for designers aiming to create interactive documents with ease. Its straightforward syntax and support for various components 
+make it an ideal choice for crafting structured content that is both attractive and functional.</p>
+
+<p>For more information on utilizing SML, designers are encouraged to explore its capabilities and experiment with different layouts and components to fully 
+leverage the potential of this markup language.</p>
 
 </div>
 </div>

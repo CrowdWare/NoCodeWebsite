@@ -4,7 +4,7 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-<title>Page</title>
+<title>app</title>
 <meta name="keywords" content="android,app,no code" />
 <meta name="description" content="NoCode Designer" />
 <meta name="Author" content="Olaf" />
@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://www.shifting.site/assets/images/happypeople.png" />
 <meta property="og:type" content="image/png" />
 <meta property="og:url" content="https://www.shifting.site/" /> 
-<meta property="og:title" content="Page" />
+<meta property="og:title" content="app" />
 <meta property="og:description" content="Die Idee hinter Shift ist die Möglichkeit, mit einer neuen virtuellen Flüssigkeit, die von Menschen hergestellt wird, ein universelles Grundeinkommen zu schaffen." />
 
 <!-- WEB FONTS -->
@@ -129,11 +129,11 @@
 		
 <header id="page-title">
 	<div class="container">
-		<h1>Page</h1>
+		<h1>App</h1>
 		<ul class="breadcrumb">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="docu.html">Documentation</a></li>
-			<li class="active">Page</li>
+			<li class="active">App</li>
 		</ul>
 	</div>
 </header>
@@ -148,23 +148,103 @@
   </li>
 </ul>
 
-<h4 id="todo">TODO</h4>
+<h4 id="app-properties">App Properties</h4>
 
 <ul class="nav flex-column">  
     <li class="nav-item">
-        <a class="nav-link" href="#">TODO</a>
+        <a class="nav-link" href="#app">smlVersion</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#app">name</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#app">icon</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#app">id</a>
     </li>
 </ul>
 
 </div>
 <div class="col-md-8">
-<h2 id="page">Page</h2>
+<h2 id="app">App</h2>
 
-<p>The page is the main document in all apps.<br />
+<p>An app represents a modern ebook or even a mobile app.<br />
+An app in our case consists of several pages where the user can navigate from one to another.<br />
+The navigation between these pages can be done by clicking a button or a link.<br />
+An app can be installed on Android today and maybe later on iOS as well.
+An app consists not only on text and images, it can also host videos, interactive 3D objects, buttons and sound.<br />
 <br>
-All apps are loading the home page when they are started. That's also the reason why this page can not be renamed or be deleted.<br />
+Later we can add other elements based on user requests as well. The screen is the limit. In other words, "We can display all pixels that you can imagine".</p>
+
+<h2 id="creation">Creation</h2>
+
+<p>In order to create such an app you can create a new project and check the app option. Then all necesarry files and folders will be created for you.<br />
 <br>
-For more information about how to write a page have a look at the <a href="sml.html">SML definition</a> <a href="sml.html">here</a>.</p>
+If you already have created a project without choosing the app option you can do the following. Find the project folder on your harddrive. 
+Add the folder pages inside this folder and add the file app.sml into the root folder of the project.</p>
+
+<p>In the pages folder add a file with the name home.sml. This will be your first page. In the home.sml add content like </p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="n">Page</span> <span class="p">{</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="s2">&quot;8&quot;</span>
+
+  <span class="n">Text</span> <span class="p">{</span>
+    <span class="n">text</span><span class="p">:</span> <span class="s2">&quot;Hello world!&quot;</span>
+  <span class="p">}</span>  
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>The content of the app.sml will look as follows.</p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="n">App</span> <span class="p">{</span>
+  <span class="n">name</span><span class="p">:</span> <span class="s2">&quot;MyApp&quot;</span>
+  <span class="n">icon</span><span class="p">:</span> <span class="s2">&quot;icon.png&quot;</span>
+  <span class="n">id</span><span class="p">:</span> <span class="s2">&quot;com.example.myapp&quot;</span>
+  <span class="n">smlVersion</span><span class="p">:</span> <span class="s2">&quot;1.1&quot;</span>
+
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p><a id="app"></a></p>
+
+<h2 id="app-2">App</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Property</th>
+  <th>Description</th>
+  <th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>smlVersion</strong></td>
+  <td>This is the version the programm is using internally. This used to be able to read files from older versions also. In this case 1.1 is used which means the grammar is at version 1 and</td>
+  <td>1.1</td>
+</tr>
+<tr>
+  <td><strong>name</strong></td>
+  <td>The name or title of the app or book.</td>
+  <td></td>
+</tr>
+<tr>
+  <td><strong>id</strong></td>
+  <td>Is is a unique identifier the mobile app. Sample: com.example.myapp</td>
+  <td></td>
+</tr>
+<tr>
+  <td><strong>icon</strong></td>
+  <td>The icon of the app for the mobile desktop and the splash screen.</td>
+  <td>icon.png</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>

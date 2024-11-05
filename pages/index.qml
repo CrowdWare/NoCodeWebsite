@@ -207,6 +207,10 @@ The app is instantly available online, and you and anyone else to whom you send 
 &lt;div class=&quot;bs-callout text-center styleBackground&quot;&gt;
 	&lt;h3&gt;Do you want to have the &lt;strong&gt;APP&lt;/strong&gt; for the desktop and start creating something NEW?&lt;a href=&quot;https://github.com/CrowdWare/NoCodeDesigner/releases&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
+
+&lt;div class=&quot;bs-callout text-center styleBackground&quot;&gt;
+	&lt;h3&gt;Do you want to have the &lt;strong&gt;APP&lt;/strong&gt; for Android and start reading books?&lt;a href=&quot;https://github.com/CrowdWare/NoCodeBrowser/releases&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
 &lt;!-- /CALLOUT --&gt;"
                     adminlabel: "callout"
                 }

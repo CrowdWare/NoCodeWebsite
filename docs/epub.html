@@ -4,7 +4,7 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-<title>Page</title>
+<title>Epub</title>
 <meta name="keywords" content="android,app,no code" />
 <meta name="description" content="NoCode Designer" />
 <meta name="Author" content="Olaf" />
@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://www.shifting.site/assets/images/happypeople.png" />
 <meta property="og:type" content="image/png" />
 <meta property="og:url" content="https://www.shifting.site/" /> 
-<meta property="og:title" content="Page" />
+<meta property="og:title" content="Epub" />
 <meta property="og:description" content="Die Idee hinter Shift ist die Möglichkeit, mit einer neuen virtuellen Flüssigkeit, die von Menschen hergestellt wird, ein universelles Grundeinkommen zu schaffen." />
 
 <!-- WEB FONTS -->
@@ -129,11 +129,11 @@
 		
 <header id="page-title">
 	<div class="container">
-		<h1>Page</h1>
+		<h1>EPUB</h1>
 		<ul class="breadcrumb">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="docu.html">Documentation</a></li>
-			<li class="active">Page</li>
+			<li class="active">EPUB</li>
 		</ul>
 	</div>
 </header>
@@ -148,23 +148,145 @@
   </li>
 </ul>
 
-<h4 id="todo">TODO</h4>
+<h4 id="markdown">Markdown</h4>
 
 <ul class="nav flex-column">  
     <li class="nav-item">
-        <a class="nav-link" href="#">TODO</a>
+        <a class="nav-link" href="markdown.html#header">Header</a>
+    </li>
+        <li class="nav-item">
+        <a class="nav-link" href="markdown.html#styling">Styling</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="markdown.html#images">Images</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="markdown.html#links">Links</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="markdown.html#chars">Special characters</a>
+    </li>
+</ul>
+
+<h4 id="ebook-properties">Ebook Properties</h4>
+
+<ul class="nav flex-column">  
+    <li class="nav-item">
+        <a class="nav-link" href="#ebook">smlVersion</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#ebook">name</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#ebook">version</a>
+    </li>   
+    <li class="nav-item">
+        <a class="nav-link" href="#ebook">theme</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#ebook">creator</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#ebook">language</a>
+    </li>
+</ul>
+
+<h4 id="part-properties">Part Properties</h4>
+
+<ul class="nav flex-column">  
+    <li class="nav-item">
+        <a class="nav-link" href="#">src</a>
     </li>
 </ul>
 
 </div>
 <div class="col-md-8">
-<h2 id="page">Page</h2>
+<h2 id="epub">EPUB</h2>
 
-<p>The page is the main document in all apps.<br />
-<br>
-All apps are loading the home page when they are started. That's also the reason why this page can not be renamed or be deleted.<br />
-<br>
-For more information about how to write a page have a look at the <a href="sml.html">SML definition</a> <a href="sml.html">here</a>.</p>
+<p>Epub3 is the actual ebook format.
+It consists of xhtml, images, stylesheets and toc (table of contents).
+The ebook is just a folder with all the above files zipped to a .epub file.</p>
+
+<h2 id="creation">Creation</h2>
+
+<p>To create such an epub archieve you have to create a new project using the NoCodeDesigner and choose <strong>book</strong> as one of the options.
+Then all necesarry file and folders will be created for you.</p>
+
+<p>If you already have created a project without choosing the <strong>book</strong> option you can do the following.
+Find the project folder on your harddrive. Add the folder <strong>parts</strong> inside this folder and add the file <strong>book.sml</strong> into the root folder of the project. </p>
+
+<p>In the parts folder add a file with the name <em>home.sml</em>. This will be your first page.
+Add markdown content like </p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="gh"># Title</span>
+Lorem ipsum dolor
+</code></pre>
+</div>
+
+<p>The content of the <em>book.sml</em> will look as follows.</p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="n">Ebook</span> <span class="p">{</span>
+  <span class="n">smlVersion</span><span class="p">:</span> <span class="s2">&quot;1.1&quot;</span>
+  <span class="n">name</span><span class="p">:</span> <span class="s2">&quot;Your book title&quot;</span>
+  <span class="n">version</span><span class="p">:</span> <span class="s2">&quot;1.0&quot;</span>
+  <span class="n">theme</span><span class="p">:</span> <span class="s2">&quot;Epub3&quot;</span>
+  <span class="n">creator</span><span class="p">:</span> <span class="s2">&quot;Your name&quot;</span>
+  <span class="n">language</span><span class="p">:</span> <span class="s2">&quot;en&quot;</span>
+
+  <span class="n">Part</span> <span class="p">{</span>
+    <span class="n">src</span><span class="p">:</span> <span class="s2">&quot;home.md&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p><a id="ebook"></a></p>
+
+<h2 id="ebook">Ebook</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Property</th>
+  <th>Description</th>
+  <th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>smlVersion</strong></td>
+  <td>This is the version the programm is using internally. This used to be able to read files from older versions also. In this case 1.1 is used which means the grammar is at version 1 and</td>
+  <td>1.1</td>
+</tr>
+<tr>
+  <td><strong>name</strong></td>
+  <td>The name or title of the book.</td>
+  <td></td>
+</tr>
+<tr>
+  <td><strong>version</strong></td>
+  <td>The version of the book</td>
+  <td></td>
+</tr>
+<tr>
+  <td><strong>theme</strong></td>
+  <td>This is the template name to render the epub content.</td>
+  <td>Epub3</td>
+</tr>
+<tr>
+  <td><strong>creator</strong></td>
+  <td>Your name or the name of the author.</td>
+  <td></td>
+</tr>
+<tr>
+  <td><strong>language</strong></td>
+  <td>The language of the book. At the moment we support <strong>en</strong> for english and <strong>de</strong> for German.</td>
+  <td>en</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
