@@ -53,37 +53,6 @@ Content {
         Row {
 
             Column {
-                span: 6
-
-                Text {
-                    text: "&lt;div class=&quot;featured-box nobg border-only&quot;&gt;
-	&lt;div class=&quot;box-content&quot;&gt;
-		&lt;i class=&quot;fa fa-bolt&quot;&gt;&lt;/i&gt;
-		&lt;h4&gt;&lt;strong&gt;No Code&lt;/strong&gt;&lt;/h4&gt;
-	&lt;p&gt;Keine Notwendigkeit das Programmieren zu erlernen.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;"
-                }
-            }
-
-            Column {
-                span: 6
-
-                Text {
-                    text: "&lt;div class=&quot;featured-box nobg border-only&quot;&gt;
-	&lt;div class=&quot;box-content&quot;&gt;
-		&lt;i class=&quot;fa fa-lightbulb-o&quot;&gt;&lt;/i&gt;
-		&lt;h4&gt;&lt;strong&gt;Zero deployment&lt;/strong&gt;&lt;/h4&gt;
-		&lt;p&gt;Keine Notwendigkeit, jedes Mal eine neue App runterzuladen, wenns ein Update gibt.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;"
-                }
-            }
-        }
-
-        Row {
-
-            Column {
                 span: 12
 
                 Markdown {
