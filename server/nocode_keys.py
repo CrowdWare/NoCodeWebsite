@@ -1,3 +1,4 @@
+# no production data here, only test environment keys
 NOCODE_DB_PWD = "<pwd>"
 NOCODE_DB_USER = "<dbuser>"
 NOCODE_DATABASE = "<db>"
