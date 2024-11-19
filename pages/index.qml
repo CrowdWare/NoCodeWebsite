@@ -38,9 +38,9 @@ Content {
 
                 Text {
                     text: "&lt;h1&gt;
-	&lt;strong&gt;Welcome&lt;/strong&gt; to NoCode
+	&lt;strong&gt;Welcome&lt;/strong&gt; to FreeBook
 &lt;/h1&gt;
-&lt;p&gt;NoCode is a project from &lt;a href=&quot;https://www.crowdware.at&quot;&gt;CrowdWare&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;FreeBook is a project from &lt;a href=&quot;https://www.crowdware.at&quot;&gt;CrowdWare&lt;/a&gt;&lt;/p&gt;
 
 "
                 }
@@ -59,7 +59,7 @@ Content {
                     text: "
 ##Vision
 
-The original idea behind NoCode was to create interactive eBooks that not only integrate videos, sound, and interactions but also incorporate 3D animations for tutorials, for example.
+The original idea behind FreeBook was to create interactive eBooks that not only integrate videos, sound, and interactions but also incorporate 3D animations for tutorials, for example.
 From this idea, a new way of software development and distribution has emerged.
 We use the technology we are familiar with from websites and embed it into native applications.
 And we do this on every platform.
@@ -174,11 +174,11 @@ The app is instantly available online, and you and anyone else to whom you send 
                 Text {
                     text: "&lt;!-- CALLOUT --&gt;
 &lt;div class=&quot;bs-callout text-center styleBackground&quot;&gt;
-	&lt;h3&gt;Do you want to have the &lt;strong&gt;APP&lt;/strong&gt; for the desktop and start creating something NEW?&lt;a href=&quot;https://github.com/CrowdWare/NoCodeDesigner/releases&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
+	&lt;h3&gt;Do you want to have the &lt;strong&gt;APP&lt;/strong&gt; for the desktop and start creating something NEW?&lt;a href=&quot;https://github.com/CrowdWare/FreeBookDesigner/releases&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;bs-callout text-center styleBackground&quot;&gt;
-	&lt;h3&gt;Do you want to have the &lt;strong&gt;APP&lt;/strong&gt; for Android and start reading books?&lt;a href=&quot;https://github.com/CrowdWare/NoCodeBrowser/releases&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
+	&lt;h3&gt;Do you want to have the &lt;strong&gt;APP&lt;/strong&gt; for Android and start reading books?&lt;a href=&quot;https://github.com/CrowdWare/FreeBookReader/releases&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;!-- /CALLOUT --&gt;"
                     adminlabel: "callout"
@@ -197,17 +197,9 @@ The app is instantly available online, and you and anyone else to whom you send 
                 Markdown {
                     text: "
 # Roadmap
-- 2024 Launch of the NoCodeDesigner for MacOS, Windows, Linux, and Web
-- 2024 Launch of the NoCodeBrowser for Android
-- 2025 Launch of the NoCodeBrowser for iOS
-
-## NoCodeDesigner
-- Drag-and-drop design panel
-- Plugins for REST database access (so you can access any data source)
-- Plugins for e-commerce systems (create your own shop)
-- Plugins for payment functions (allow your customers to make purchases in the app)
-- Plugin for 3D scenes (e.g., for interactive tutorials)
-- One-click deployment of an app as .APK (Android) and .IPA (iOS) (can then be published in the App Store or Play Store, with your own App ID)
+- 2024 Launch of the FreeBookDesigner for MacOS, Windows, Linux, and Web
+- 2024 Launch of the FreeBookReader for Android
+- 2025 Launch of the FreeBookReader for iOS
 
 ## Feedback
 Your feedback is crucial for all these features, as we only want to integrate what our customers truly want.  
@@ -246,57 +238,6 @@ Features that are most requested by customers will be prioritized for developmen
 	&lt;/div&gt;
 &lt;/div&gt;"
                     adminlabel: "Parallanx"
-                }
-            }
-        }
-    }
-
-    Section {
-
-        Row {
-
-            Column {
-                span: 12
-
-                Markdown {
-                    text: "&lt;p class=&quot;p-3&quot;&gt;&lt;/p&gt;
-# Funding
-When we founded CrowdWare, we set ourselves the goal of providing custom software at very affordable prices and as open source.  
-The idea for this project is also to first design a prototype, then raise development costs through crowdfunding, and finally complete the product.  
-Sometimes, as in this case, we also skip a step.  
-
-We have decided to provide a functional solution first and then finance further development through crowdfunding.  
-If you understand the idea behind NoCode and recognize the potential it holds, I invite you to support the project.
-
-"
-                    adminlabel: "Finanzierung"
-                }
-            }
-        }
-
-        Row {
-
-            Column {
-                span: 4
-
-                Image {
-                    src: "crowdfunding.jpg"
-                    link: "https://igg.me/at/nocodedesigner"
-                }
-            }
-
-            Column {
-                span: 8
-
-                Markdown {
-                    text: "
-## Crowdfunding
-In the &lt;a target=&quot;_blank&quot; href=&quot;https://igg.me/at/nocodedesigner&quot;&gt;crowdfunding campaign&lt;/a&gt;, we want to finance the development costs that have already been incurred as well as those that will arise.  
-If the funding goes through, we can bring the product to market for free, benefiting every future user.  
-Since we have ongoing costs and also want to fund other projects, we will offer a commercial option in addition to the free version.
-
-However, even the commercial offering will be significantly cheaper than that of our competitors, as we operate as a nonprofit and are not interested in profit.
-"
                 }
             }
         }

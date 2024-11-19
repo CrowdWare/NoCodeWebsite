@@ -16,12 +16,6 @@ Menus {
             attributes: ''
         }
         Menuitem {
-            title: 'Licenses'
-            url: 'abo.html'
-            icon: ''
-            attributes: ''
-        }
-        Menuitem {
             title: 'Documentation'
             url: 'docu.html'
             icon: ''
@@ -55,12 +49,6 @@ Menus {
         Menuitem {
             title: 'Designer'
             url: 'designer-de.html'
-            icon: ''
-            attributes: ''
-        }
-        Menuitem {
-            title: 'Lizenzen'
-            url: 'abo-de.html'
             icon: ''
             attributes: ''
         }

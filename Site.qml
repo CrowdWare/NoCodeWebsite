@@ -1,12 +1,12 @@
 import FlatSiteBuilder 2.0
 
 Site {
-   title: 'NoCode'
+   title: 'FreeBook'
    theme: 'atropos'
-   description: 'NoCode Designer'
+   description: 'FreeBookDesigner'
    copyright: '(C) 2024 CrowdWare. All Rights Reserved.'
    keywords: 'android,app,no code'
-   author: 'Olaf'
+   author: 'Art'
    logo: 'logo.png'
    language: 'en'
    publisher: 'GithubPublisher'

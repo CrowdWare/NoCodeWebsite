@@ -57,14 +57,11 @@ Content {
     	&lt;a class=&quot;nav-link&quot; href=&quot;epub.html&quot;&gt;Ebook (.EPUB)&lt;/a&gt;
   	&lt;/li&gt;
 	&lt;li class=&quot;nav-item&quot;&gt;
+    	&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Browsable Book (.HTML)&lt;/a&gt;
+  	&lt;/li&gt;
+	&lt;li class=&quot;nav-item&quot;&gt;
     	&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Browsable App (.SML)&lt;/a&gt;
   	&lt;/li&gt;
-  	&lt;li class=&quot;nav-item&quot;&gt;
-    	&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Android App (.APK)&lt;/a&gt;
-  	&lt;/li&gt;
-  	&lt;li class=&quot;nav-item&quot;&gt;
-    	&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Source Code (.KT)&lt;/a&gt;
-  	&lt;/li&gt;	
 &lt;/ul&gt;"
                 }
             }
@@ -102,17 +99,14 @@ One author is writing texts and the other one is embedding layouts and interacti
 The initial goal of NoCode was to be able to build ebooks (.epub), which you can then sell on Amazon for example.
 Because of the fact that you cannot display all the nice possible content like audio, video and 3D objects we decided to additionally build an ebook as native Android app, but still EPUB can be created.
 
-#### Native App
-This initial goal has been transformed into the idea that we could also build rich native apps for Android. You you are able to build your own Android .APK and sell it on Play Store.
+#### HTML
+You can publish the whole project on a web server and then you are able to load the project with a standard web browser.  
+You only have to host your HTML files on a web server. You can also host them ob Github Pages for free.
 
 #### Dynamic Web Apps
 You can publish the whole project on a web server and then you are able to load the project with the NoCodeBrowser.  
 In this case you don&#x27;t only have the possibility to test the app on your phone, you can also deliver your app to your customers and employees using this technology.  
 This means zero deployment. You only have to host your project files on a web server. You can also host them ob Github Pages for free.
-
-#### Source Code
-Because of the fact that we create Android apps based on Jetpack Compose we can also provide you with source code, so that you can develop your app further.
-So NoCodeDesigner is also a code generator.
 
 "
                 }
