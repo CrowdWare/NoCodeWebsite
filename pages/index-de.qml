@@ -131,6 +131,31 @@ Durchgesetzt hat sich bis dato keiner und das merkt man als Programmierer, da ma
     }
 
     Section {
+
+        Row {
+
+            Column {
+                span: 12
+
+                Text {
+                    text: "&lt;!-- CALLOUT --&gt;
+&lt;div class=&quot;bs-callout text-center styleBackground&quot;&gt;
+	&lt;h3&gt;Willst Du die &lt;strong&gt;APP&lt;/strong&gt; für den Desktop haben und anfangen NEUES zu schaffen?&lt;a href=&quot;https://github.com/CrowdWare/NoCodeDesigner/releases&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bs-callout text-center styleBackground&quot;&gt;
+	&lt;h3&gt;Willst Du die &lt;strong&gt;APP&lt;/strong&gt; für Android haben und anfangen Bücher zu lesen?&lt;a href=&quot;https://github.com/CrowdWare/NoCodeBrowser/releases&quot; target=&quot;_self&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;DOWNLOAD&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;!-- /CALLOUT --&gt;
+
+"
+                    adminlabel: "callout"
+                }
+            }
+        }
+    }
+    
+    Section {
         cssclass: "container margin-top80"
 
         Row {
