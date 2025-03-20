@@ -1,8 +1,8 @@
 import FlatSiteBuilder 2.0
 import RevolutionSlider 1.0
 import TextEditor 1.0
-import MarkdownEditor 1.0
 import ImageEditor 1.0
+import MarkdownEditor 1.0
 
 Content {
     title: "NoCode"
@@ -46,6 +46,31 @@ Content {
                 }
             }
         }
+
+        Row {
+
+            Column {
+                span: 4
+
+                Image {
+                    src: "20250320_2142_Data_Exchange_in_Action_simple_compose_01jptmpb85ernsp4a8zae2gqt9.gif"
+                }
+            }
+
+            Column {
+                span: 8
+
+                Markdown {
+                    text: "##Vision
+
+The original idea behind NoCode was to create interactive eBooks that not only integrate videos, sound, and interactions but also incorporate 3D animations for tutorials, for example.
+From this idea, a new way of software development and distribution has emerged.
+We use the technology we are familiar with from websites and embed it into native applications.
+And we do this on every platform.
+"
+                }
+            }
+        }
     }
 
     Section {
@@ -57,13 +82,6 @@ Content {
 
                 Markdown {
                     text: "
-##Vision
-
-The original idea behind NoCode was to create interactive eBooks that not only integrate videos, sound, and interactions but also incorporate 3D animations for tutorials, for example.
-From this idea, a new way of software development and distribution has emerged.
-We use the technology we are familiar with from websites and embed it into native applications.
-And we do this on every platform.
-
 ###The End of Browser Wars
 
 If you’ve been around as long as our founder, you know the issues that unfortunately still persist today.
