@@ -213,108 +213,39 @@ The app is instantly available online, and you and anyone else to whom you send 
                 span: 12
 
                 Markdown {
-                    text: "
-# Roadmap
-- 2024 Launch of the NoCodeDesigner for MacOS, Windows, Linux, and Web
-- 2024 Launch of the NoCodeBrowser for Android
-- 2025 Launch of the NoCodeBrowser for iOS
+                    text: "# Roadmap
 
-## NoCodeDesigner
-- Drag-and-drop design panel
-- Plugins for REST database access (so you can access any data source)
-- Plugins for e-commerce systems (create your own shop)
-- Plugins for payment functions (allow your customers to make purchases in the app)
-- Plugin for 3D scenes (e.g., for interactive tutorials)
-- One-click deployment of an app as .APK (Android) and .IPA (iOS) (can then be published in the App Store or Play Store, with your own App ID)
+## 2025 Launch Timeline
 
-## Feedback
-Your feedback is crucial for all these features, as we only want to integrate what our customers truly want.  
-We will introduce a feature rating system where you can suggest new features, and other users can vote for them.  
-Features that are most requested by customers will be prioritized for development and implementation.
-"
+- **April** – Release of **NoCodeDesigner for macOS**  
+- **May** – Launch of **NoCodeBrowser for Android**  
+- **June** – Launch of **NoCodeBrowser for iOS**
+
+---
+
+## Upcoming Features — NoCodeDesigner
+
+- **Drag-and-drop design panel** – Build your UI with ease  
+- **E-commerce plugins** – Create your own shop and sell products  
+- **Payment integration** – Enable in-app purchases for your customers  
+- **3D scene plugin** – Ideal for interactive tutorials and rich experiences  
+- **One-click app deployment** – Export your app as `.APK` (Android) or `.IPA` (iOS)  
+  Ready to publish with your own App ID on the Play Store or App Store
+
+---
+
+## Feedback and Feature Voting
+
+Your feedback helps shape the product.
+
+We are building a feature suggestion and voting system, where you can:
+
+- Submit your own feature ideas  
+- Vote on suggestions from others  
+- Influence our development priorities based on real demand
+
+Let us know what matters most to you — we’re building this together."
                     adminlabel: "Roadmap"
-                }
-            }
-        }
-    }
-
-    Section {
-        cssclass: "parallax margin-top80"
-        style: "background-image: url('assets/images/natur3.jpg');"
-        attributes: "data-stellar-background-ratio='0.7'"
-
-        Row {
-
-            Column {
-                span: 12
-
-                Text {
-                    text: "&lt;div class=&quot;container&quot;&gt;
-	&lt;div class=&quot;row animation_fade_in&quot;&gt;
-		&lt;div class=&quot;col-md-6&quot;&gt;&lt;/div&gt;
-		&lt;div class=&quot;col-md-6&quot;&gt;
-			&lt;div class=&quot;white-row&quot;&gt;
-				&lt;h4&gt;We need &lt;strong&gt;YOU&lt;/strong&gt;&lt;/h4&gt;
-				&lt;p class=&quot;lead&quot;&gt;
-					to bring something new to the world!
-				 
-				&lt;/p&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;"
-                    adminlabel: "Parallanx"
-                }
-            }
-        }
-    }
-
-    Section {
-
-        Row {
-
-            Column {
-                span: 12
-
-                Markdown {
-                    text: "&lt;p class=&quot;p-3&quot;&gt;&lt;/p&gt;
-# Funding
-When we founded CrowdWare, we set ourselves the goal of providing custom software at very affordable prices and as open source.  
-The idea for this project is also to first design a prototype, then raise development costs through crowdfunding, and finally complete the product.  
-Sometimes, as in this case, we also skip a step.  
-
-We have decided to provide a functional solution first and then finance further development through crowdfunding.  
-If you understand the idea behind NoCode and recognize the potential it holds, I invite you to support the project.
-
-"
-                    adminlabel: "Finanzierung"
-                }
-            }
-        }
-
-        Row {
-
-            Column {
-                span: 4
-
-                Image {
-                    src: "crowdfunding.jpg"
-                    link: "https://igg.me/at/nocodedesigner"
-                }
-            }
-
-            Column {
-                span: 8
-
-                Markdown {
-                    text: "
-## Crowdfunding
-In the &lt;a target=&quot;_blank&quot; href=&quot;https://igg.me/at/nocodedesigner&quot;&gt;crowdfunding campaign&lt;/a&gt;, we want to finance the development costs that have already been incurred as well as those that will arise.  
-If the funding goes through, we can bring the product to market for free, benefiting every future user.  
-Since we have ongoing costs and also want to fund other projects, we will offer a commercial option in addition to the free version.
-
-However, even the commercial offering will be significantly cheaper than that of our competitors, as we operate as a nonprofit and are not interested in profit.
-"
                 }
             }
         }

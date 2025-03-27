@@ -154,7 +154,7 @@ Durchgesetzt hat sich bis dato keiner und das merkt man als Programmierer, da ma
             }
         }
     }
-    
+
     Section {
         cssclass: "container margin-top80"
 
@@ -223,103 +223,38 @@ Die App ist sofort online verfügbar und Du und jeder andere, den du einen entsp
 
                 Markdown {
                     text: "# Roadmap
-- 2024 Bereitstellung des NoCodeDesigners für MacOS, Windows, Linux und Web
-- 2024 Bereitstellung des NoCodeBrowsers für Android
-- 2025 Bereitstellung des NoCodeBrowsers für iOS
 
-## NoCodeDesigner
-- Drag&#x27;n&#x27;drop Design Panel
-- Plugins für REST Datenbankzugriff (so können sie auf beliebige Datenquelle zugreifen)
-- Plugins für Shop-Systeme (bilden sie ihren eigenen Shop ab)
-- Plugins für Bezahlfunktionen (ermöglichen sie ihren Kunden in der App Käufe zu tätigen)
-- Plugin für 3D Scenen (zB. für interaktive Tutorials)
-- One-Click-Bereitstellung einer App als .APK (Android) und .IPO (iOS) (kann dann im App- bzw Play Store veröffentlicht werden, eigene AppId)
+## Zeitplan für 2025
 
-## Feedback
-Für all diese Features ist natürlich ihr Feedback von großer Wichtigkeit, denn wie wollen nur das integrieren, was unsere Kunden auch wirklich wollen.  
-Wir werden diesbezüglich ein Feature-Rating einführen. Da können sie neue Features vorschlagen und andere Nutzer können ihre Stimme dafür abgeben.  
-Features, die vo den meisten Kunden gewünscht werden, werden wir prioritär behandeln und implementieren."
+- **April** – Veröffentlichung des **NoCodeDesigner für macOS**  
+- **Mai** – Launch des **NoCodeBrowser für Android**  
+- **Juni** – Launch des **NoCodeBrowser für iOS**
+
+---
+
+## Geplante Funktionen – NoCodeDesigner
+
+- **Drag-and-drop Design-Panel** – Benutzeroberflächen ganz einfach gestalten  
+- **Plugins für E-Commerce-Systeme** – Erstelle deinen eigenen Shop  
+- **Integration von Zahlungsfunktionen** – Ermögliche Käufe direkt in der App  
+- **Plugin für 3D-Szenen** – Perfekt für interaktive Tutorials oder Produktpräsentationen  
+- **One-Click-Deployment** – Exportiere deine App als `.APK` (Android) oder `.IPA` (iOS)  
+  Bereit zur Veröffentlichung mit eigener App-ID im Play Store oder App Store
+
+---
+
+## Feedback und Feature-Voting
+
+Dein Feedback ist entscheidend für die Weiterentwicklung.
+
+Wir arbeiten an einem Vorschlags- und Abstimmungssystem, mit dem du:
+
+- Eigene Funktionswünsche einreichen kannst  
+- Vorschläge anderer Nutzer bewerten kannst  
+- Die Priorisierung neuer Funktionen direkt mitbestimmen kannst
+
+Wir entwickeln nur, was euch wirklich weiterhilft – mach mit und gestalte die Zukunft von NoCodeDesigner mit."
                     adminlabel: "Roadmap"
-                }
-            }
-        }
-    }
-
-    Section {
-        cssclass: "parallax margin-top80"
-        style: "background-image: url('assets/images/natur3.jpg');"
-        attributes: "data-stellar-background-ratio='0.7'"
-
-        Row {
-
-            Column {
-                span: 12
-
-                Text {
-                    text: "&lt;div class=&quot;container&quot;&gt;
-	&lt;div class=&quot;row animation_fade_in&quot;&gt;
-		&lt;div class=&quot;col-md-6&quot;&gt;&lt;/div&gt;
-		&lt;div class=&quot;col-md-6&quot;&gt;
-			&lt;div class=&quot;white-row&quot;&gt;
-				&lt;h4&gt;Wir brauchen &lt;strong&gt;Dich&lt;/strong&gt;&lt;/h4&gt;
-				&lt;p class=&quot;lead&quot;&gt;
-				 	damit wir neues in die Welt bringen können!
-				&lt;/p&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;"
-                    adminlabel: "Parallanx"
-                }
-            }
-        }
-    }
-
-    Section {
-
-        Row {
-
-            Column {
-                span: 12
-
-                Markdown {
-                    text: "&lt;p class=&quot;p-3&quot;&gt;&lt;/p&gt;
-# Finanzierung
-Wir haben es uns damals zur Gründung von CrowdWare zur Aufgabe gemacht, individuelle Software zu sehr günstigen Preise und Open Source zur Verfügung zu stellen.  
-Auch bei diesem Projekt ist die Idee, erst einmal einen Prototypen zu designen, dann die Entwicklungskosten via CrowdFunding einzusammeln und dann das Produkt fertig zu stellen.  
-Manchmal, wie auch hier, überspringen wir auch mal einen Punkt.  
-
-Wir haben uns entschieden, erst einmal eine lauffähige Lösung bereit zu stellen und erst dann die weitere Entwicklung via CrowdFunding zu finanzieren.  
-Wenn Du die Idee hinter NoCode verstanden hast, das Potenzial dahinter erkennst, dann lade ich Dich ein, das Projekt zu fördern.  "
-                    adminlabel: "Finanzierung"
-                }
-            }
-        }
-
-        Row {
-
-            Column {
-                span: 4
-
-                Image {
-                    src: "crowdfunding.jpg"
-                    link: "https://igg.me/at/nocodedesigner"
-                }
-            }
-
-            Column {
-                span: 8
-
-                Markdown {
-                    text: "
-
-## CrowdFunding
-In der &lt;a target=&quot;_blank&quot; href=&quot;https://igg.me/at/nocodedesigner&quot;&gt;CrowdFunding Kampagne&lt;/a&gt; wollen wir die Entwicklungskosten, die bisher aufgelaufen sind und diese, die noch entstehen werden, finanzieren.
-Wenn die Finanzierung zustande kommt, dann können wir das Produkt kostenlos auf den Markt bringen und jeder zukünftige Nutzer profiziert davon.  
-Da wir laufende Kosten haben und auch andere Projekte finanzieren möchten, werden wir zusätzlich zu der kostenlosen Variante auch ein kommerzielles Angebot anbieten.
-
-Aber selbst das kommerzielle Angebot wird weit aus günstiger sein, als das unserer Konkurrenz, denn wir arbeiten gemeinnützig und sind nicht an Profit interessiert.  
-"
                 }
             }
         }
